@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import os
 from datetime import datetime, timezone
 
 NUMERAL = "137451921129154222"
@@ -27,6 +28,12 @@ GEOMETRIES = (
     "gyroid",
     "calabi",
     "figure8",
+    "villarceau",
+    "boy",
+    "catenoid",
+    "dini",
+    "roman",
+    "hyperbolic",
 )
 
 
@@ -49,9 +56,11 @@ def contract(
     sheet_count: int = 6,
     existing: int = 6,
     blend: float = 0.5,
+    token: str | None = None,
 ) -> dict:
     geo = geometry if geometry in GEOMETRIES else "torus"
-    return {
+    payload = {
+        "type": "gaia:targetState",
         "geometry": geo,
         "gravityPull": pulse_from_counts(sheet_count, existing),
         "toroidalWeave": weave_from_counts(sheet_count, existing),
@@ -59,6 +68,18 @@ def contract(
         "blend": max(0.0, min(1.0, float(blend))),
         "numeral": NUMERAL,
     }
+    tok = token if token is not None else os.environ.get("GAIA_PULSE_TOKEN", "")
+    if tok:
+        payload["token"] = tok
+    return payload
+
+
+def pulse_frame(pulse: float, token: str | None = None) -> dict:
+    frame = {"type": "gaia:pulse", "pulse": max(0.1, min(3.0, float(pulse)))}
+    tok = token if token is not None else os.environ.get("GAIA_PULSE_TOKEN", "")
+    if tok:
+        frame["token"] = tok
+    return frame
 
 
 if __name__ == "__main__":
