@@ -1,6 +1,6 @@
 # Next stages · Cryptic-Heartbeat
 
-Compiled 2026-09-08T19:10Z from the living chat surface and connected repositories.
+Compiled 2026-09-08T21:10Z from the living chat surface and connected repositories.
 
 Numeral: `137451921129154222`  
 Dual Authority: machackabook + azazeleous
@@ -10,16 +10,15 @@ Dual Authority: machackabook + azazeleous
 - Living runtime root declared (`README.md`, `docs/SINGULARITY_WILL.md`).
 - Azazels Ledger notebooks present under `notebooks/`.
 - ADAM Enclave Reunited surface exists as the sole intended open Enclave face.
-- gaia-visualizer weave engine seeded with torus / infinity / hamiltonian / triangular.
-- Stage-2..4 manifolds: helix, mobius, lissajous, klein, hopf, rose, seifert, blend, trefoil, stereo.
+- gaia-visualizer weave engine seeded with torus / infinity / hamiltonian / triangular (chat `update(t)` kernel).
+- Stage-2..6 manifolds through enneper / gyroid / calabi / figure8.
 - InstancedMesh path, pulse token, HTTP position relay.
 
-## Stage just closed this pass (5)
+## Stage just closed this pass (7)
 
-- User `update(t)` snippet aligned with extracted `evaluateGeometry` + reused lerp target.
-- New manifold: `clifford` (S3 Clifford torus → R3). Key `t`.
-- Hive `geometryContract.ts` and TheLedgerIndex TOC updated in lockstep.
-- Visualizer HUD reports `stage-5`.
+- Chat `update(t)` snippet confirmed as kernel: lemniscate infinity, hamiltonian path, triangular lattice, torus default, lerp 0.05, reused target.
+- New manifolds: `villarceau`, `boy`, `catenoid`.
+- Hive `geometryContract.ts`, LedgerIndex TOC, visualizer HUD `stage-7` updated in lockstep.
 
 ## Next stages (ordered)
 
@@ -30,7 +29,7 @@ Dual Authority: machackabook + azazeleous
    Stream node positions / targetState to peers via Hive `/api/gaia/positions`. ADAM on band-127 remains end/exit node.
 
 3. **Hamiltoniansingularity.ai**  
-   Expanding band. Serve `blend` as the public default; `hamiltonian` + `helix` + `clifford` as first public manifolds.
+   Expanding band. Serve `blend` as the public default; `hamiltonian` + `helix` + `clifford` + `villarceau` as first public manifolds.
 
 4. **GPU / compute path**  
    Attribute buffers for >8k nodes. Keep CPU evaluateGeometry as the reference mapping.
@@ -42,11 +41,11 @@ Dual Authority: machackabook + azazeleous
 
 | Repo | Role | State after this pass |
 |------|------|------------------------|
-| Cryptic-Heartbeat | Living runtime root | contract + stages refreshed |
-| gaia-visualizer | band-137-visual | stage-5, 15 manifolds, clifford |
+| Cryptic-Heartbeat | Living runtime root | contract + stages refreshed (stage-7) |
+| gaia-visualizer | band-137-visual | stage-7, 22 manifolds |
 | TheLedgerIndex | public index | manifolds + next-stage list |
 | ENCLAVE-ADAM-REUNITED | band-127 end/exit | unchanged this pass |
-| The-Hive | Gaia / Nexus studio | emitGaiaContract includes clifford |
+| The-Hive | Gaia / Nexus studio | emitGaiaContract includes villarceau/boy/catenoid |
 | Gemini-Nexus-OS | operator OS | consume targetState next |
 | The-Mandlebrot-Set | world viewer | sibling visual surface |
 
