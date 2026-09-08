@@ -2,7 +2,7 @@
 
 ```json
 {
-  "geometry": "torus | infinity | hamiltonian | triangular | helix | mobius | lissajous | klein | hopf | rose | seifert | blend | trefoil | stereo | clifford | enneper | gyroid | calabi | figure8 | villarceau | boy | catenoid",
+  "geometry": "torus | infinity | hamiltonian | triangular | helix | mobius | lissajous | klein | hopf | rose | seifert | blend | trefoil | stereo | clifford | enneper | gyroid | calabi | figure8 | villarceau | boy | catenoid | dini | roman | hyperbolic",
   "gravityPull": 1.0,
   "toroidalWeave": 1.0,
   "lerp": 0.05,
@@ -18,7 +18,8 @@
 - `blend` mixes hamiltonian ↔ klein when `geometry === "blend"`.
 - `clifford` is the S3 Clifford torus, stereographically projected to R3.
 - Stage-6: `enneper`, `gyroid`, `calabi`, `figure8`.
-- Stage-7: `villarceau` (interlocking torus circles), `boy` (RP2 immersion), `catenoid` (catenoid↔helicoid associate family).
+- Stage-7: `villarceau`, `boy`, `catenoid`.
+- Stage-8: `dini` (twisted constant-curvature), `roman` (Steiner RP2), `hyperbolic` (one-sheet hyperboloid).
 - Node scale follows `gravityPull` in the visualizer.
 - Chat kernel `update(t)` remains the reference for torus / infinity / hamiltonian / triangular.
 
