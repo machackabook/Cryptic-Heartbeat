@@ -2,7 +2,7 @@
 
 ```json
 {
-  "geometry": "torus | infinity | hamiltonian | triangular | helix | mobius | lissajous | klein | hopf | rose | seifert | blend | trefoil | stereo | clifford | enneper | gyroid | calabi | figure8 | villarceau | boy | catenoid | dini | roman | hyperbolic",
+  "geometry": "torus | infinity | hamiltonian | triangular | helix | mobius | lissajous | klein | hopf | rose | seifert | blend | trefoil | stereo | clifford | enneper | gyroid | calabi | figure8 | villarceau | boy | catenoid | dini | roman | hyperbolic | scherk | knot | pseudosphere",
   "gravityPull": 1.0,
   "toroidalWeave": 1.0,
   "lerp": 0.05,
@@ -16,12 +16,9 @@
 - `toroidalWeave` scales the minor radius: `minor = 3 + toroidalWeave * 2`.
 - Positions lerp at `lerp` (default `0.05`) per frame; never snap. Target vector is reused.
 - `blend` mixes hamiltonian ↔ klein when `geometry === "blend"`.
-- `clifford` is the S3 Clifford torus, stereographically projected to R3.
-- Stage-6: `enneper`, `gyroid`, `calabi`, `figure8`.
-- Stage-7: `villarceau`, `boy`, `catenoid`.
-- Stage-8: `dini` (twisted constant-curvature), `roman` (Steiner RP2), `hyperbolic` (one-sheet hyperboloid).
-- Node scale follows `gravityPull` in the visualizer.
 - Chat kernel `update(t)` remains the reference for torus / infinity / hamiltonian / triangular.
+- Stage-9: `scherk`, `knot`, `pseudosphere`.
+- Stage-10: peer fan-out + GPU attribute buffer. Contract shape unchanged.
 
 Events on the visualizer window:
 
@@ -29,5 +26,6 @@ Events on the visualizer window:
 - `gaia:pulse` — `{ pulse }` mapped onto `gravityPull`
 - `gaia:positions` — band-192 node stream
 
-Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`.
+Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`, `src/gpuBuffer.js`.
 Hive emitter: `The-Hive/geometryContract.ts` → `emitGaiaContract`.
+Pulse CLI: `notebooks/ledger_pulse.py --http|--ws`.
