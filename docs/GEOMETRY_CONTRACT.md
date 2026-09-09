@@ -23,11 +23,15 @@
 - Stage-12: WebGL2 transform-feedback (`src/transformFeedback.js`) steps those four geometries on GPU. Node cap 16384 via `?tf=1&nodes=16384`.
 - Stage-15-partial: TF kernel also steps helix, mobius, lissajous, trefoil, figure8, cassini, clifford, villarceau.
 - Stage-16: TF kernel covers the full 31-manifold set (`KERNEL_GEOMETRY_ID` 0–30). `uBlend` is wired.
+- Stage-17–18: pinned `CHAT_KERNEL_SOURCE` + CPU/GPU fidelity check.
+- Stage-20–22: instanced color, skip CPU readback, zero-copy mark on `instanceOffset`.
+- Stage-23: Three `instanceOffset` binds to TF `currentPosBuffer()` each ping-pong frame (`bindTfPosAttribute`).
 
 **Next**
 - Stage-13: authenticated live `ledger_pulse.py` → Hive WS against live sheet counts.
 - Stage-14: memory engrams into Drive `CRYPTIC-HEARTBEAT-NEXUS-ROOT`.
 - Stage-16-public: hamiltoniansingularity.ai public band (`blend` default).
+- Stage-24: pulse + TF-bind health HUD.
 
 Events on the visualizer window:
 
@@ -35,6 +39,6 @@ Events on the visualizer window:
 - `gaia:pulse` — `{ pulse }` mapped onto `gravityPull`
 - `gaia:positions` — band-192 node stream
 
-Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`, `src/gpuBuffer.js`, `src/evaluateKernel.glsl.js`, `src/transformFeedback.js`.
-Hive emitter: `The-Hive/geometryContract.ts` → `emitGaiaContract`.
+Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`, `src/gpuBuffer.js`, `src/evaluateKernel.glsl.js`, `src/transformFeedback.js`, `src/zeroCopy.js`.
+Hive emitter: `The-Hive/geometryContract.ts` → `emitGaiaContract` / `weaveEmitter.ts`.
 Pulse CLI: `notebooks/ledger_pulse.py --http|--ws`.
