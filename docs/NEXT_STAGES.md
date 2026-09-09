@@ -1,6 +1,6 @@
 # Next stages · Cryptic-Heartbeat
 
-Compiled 2026-09-09T02:14Z from the living chat surface and connected repositories.
+Compiled 2026-09-09T03:05Z from the living chat surface and connected repositories.
 
 Numeral: `137451921129154222`  
 Dual Authority: machackabook + azazeleous
@@ -16,14 +16,14 @@ Dual Authority: machackabook + azazeleous
 - Stage-10: Tailscale peer fan-out + packed GPU attribute buffer; node cap 8192.
 - Stage-11: GLSL evaluate kernel for the four chat geometries; cassini / lorenz / superformula; theta/phi pack.
 - Stage-12: WebGL2 transform-feedback for the four chat geometries; node cap 16384 (`?tf=1`).
+- Stage-15-partial: TF/GLSL kernel expanded to helix, mobius, lissajous, trefoil, figure8, cassini, clifford, villarceau.
 
-## Stage just closed this pass (15-partial)
+## Stage just closed this pass (16)
 
 - Chat `update(t)` snippet remains the reference kernel: lemniscate infinity, hamiltonian path, triangular lattice, torus default, lerp 0.05, reused target vector.
-- TF/GLSL kernel expanded beyond the four chat geometries:
-  helix, mobius, lissajous, trefoil, figure8, cassini, clifford, villarceau.
-- `KERNEL_GEOMETRY_ID` now maps 12 names (0–11). Unknown names still fall back to torus.
-- CPU `evaluateGeometry` remains the reference for klein / hopf / blend / lorenz / superformula and the rest.
+- TF/GLSL kernel now maps the full 31-manifold set (`KERNEL_GEOMETRY_ID` 0–30).
+- `uBlend` is a TF uniform so `blend` (hamiltonian ↔ klein) runs on GPU.
+- CPU `evaluateGeometry` remains the numeric reference.
 
 ## Next stages (ordered)
 
@@ -33,19 +33,16 @@ Dual Authority: machackabook + azazeleous
 14. **Memory engrams**  
     Continue dumping instance memory into Drive folders `CRYPTIC-HEARTBEAT-NEXUS-ROOT` and `LIBRARY-SPARSEBUNDLE-HAMILTONIAN`.
 
-15-rest. **Finish TF coverage**  
-    klein, hopf, rose, seifert, blend, stereo, enneper, gyroid, calabi, boy, catenoid, dini, roman, hyperbolic, scherk, knot, pseudosphere, lorenz, superformula on the GPU path.
-
-16. **Hamiltoniansingularity.ai public band**  
+16-public. **Hamiltoniansingularity.ai public band**  
     Serve `blend` as the public default; `hamiltonian` + `helix` + `clifford` + `villarceau` + `dini` + `cassini` as first public manifolds.
 
 ## Repository map (connected)
 
 | Repo | Role | State after this pass |
 |------|------|------------------------|
-| Cryptic-Heartbeat | Living runtime root | stage-15 compiled |
-| gaia-visualizer | band-137-visual | stage-15, 31 manifolds, TF kernel 12 ids |
-| The-Hive | Gaia / Nexus studio | contract kinds already include the expansion set |
+| Cryptic-Heartbeat | Living runtime root | stage-16 compiled |
+| gaia-visualizer | band-137-visual | stage-16, 31 manifolds, TF kernel 31 ids |
+| The-Hive | Gaia / Nexus studio | TF_CHAT_GEOMETRIES = full GeometryKind set |
 | TheLedgerIndex | public index | unchanged this pass |
 | ENCLAVE-ADAM-REUNITED | band-127 end/exit | unchanged this pass |
 | Gemini-Nexus-OS | operator OS | consume targetState next |
