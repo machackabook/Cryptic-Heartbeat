@@ -21,11 +21,13 @@
 - Stage-10: peer fan-out + GPU attribute buffer.
 - Stage-11: GLSL kernel (`evaluateKernel.glsl.js`) for the four chat geometries; packed theta/phi; `cassini`, `lorenz`, `superformula`.
 - Stage-12: WebGL2 transform-feedback (`src/transformFeedback.js`) steps those four geometries on GPU. Node cap 16384 via `?tf=1&nodes=16384`.
+- Stage-15-partial: TF kernel also steps helix, mobius, lissajous, trefoil, figure8, cassini, clifford, villarceau.
 
 **Next**
 - Stage-13: authenticated live `ledger_pulse.py` → Hive WS against live sheet counts.
 - Stage-14: memory engrams into Drive `CRYPTIC-HEARTBEAT-NEXUS-ROOT`.
-- Stage-15: expand the TF kernel beyond the four chat geometries.
+- Stage-15-rest: remaining manifolds on the TF path.
+- Stage-16: hamiltoniansingularity.ai public band (`blend` default).
 
 Events on the visualizer window:
 
