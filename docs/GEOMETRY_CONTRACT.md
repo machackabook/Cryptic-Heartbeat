@@ -20,6 +20,12 @@
 - Stage-9: `scherk`, `knot`, `pseudosphere`.
 - Stage-10: peer fan-out + GPU attribute buffer.
 - Stage-11: GLSL kernel (`evaluateKernel.glsl.js`) for the four chat geometries; packed theta/phi; `cassini`, `lorenz`, `superformula`.
+- Stage-12: WebGL2 transform-feedback (`src/transformFeedback.js`) steps those four geometries on GPU. Node cap 16384 via `?tf=1&nodes=16384`.
+
+**Next**
+- Stage-13: authenticated live `ledger_pulse.py` → Hive WS against live sheet counts.
+- Stage-14: memory engrams into Drive `CRYPTIC-HEARTBEAT-NEXUS-ROOT`.
+- Stage-15: expand the TF kernel beyond the four chat geometries.
 
 Events on the visualizer window:
 
@@ -27,6 +33,6 @@ Events on the visualizer window:
 - `gaia:pulse` — `{ pulse }` mapped onto `gravityPull`
 - `gaia:positions` — band-192 node stream
 
-Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`, `src/gpuBuffer.js`, `src/evaluateKernel.glsl.js`.
+Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`, `src/gpuBuffer.js`, `src/evaluateKernel.glsl.js`, `src/transformFeedback.js`.
 Hive emitter: `The-Hive/geometryContract.ts` → `emitGaiaContract`.
 Pulse CLI: `notebooks/ledger_pulse.py --http|--ws`.
