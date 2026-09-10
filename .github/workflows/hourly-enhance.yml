@@ -1,0 +1,26 @@
+name: hourly-enhance
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+  repository_dispatch:
+    types: [continuity-cascade]
+permissions:
+  contents: write
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append hourly stamp
+        run: |
+          mkdir -p docs
+          TS=$(date -u +%Y-%m-%dT%H:%MZ)
+          echo "- hourly $TS heartbeat-origin numeral=137451921129154222" >> docs/LEDGER-HOURLY.md
+      - name: Commit if dirty
+        run: |
+          git config user.name "continuity-engine"
+          git config user.email "continuity@users.noreply.github.com"
+          git add docs/LEDGER-HOURLY.md
+          git diff --cached --quiet || git commit -m "hourly enhance stamp"
+          git push || true
