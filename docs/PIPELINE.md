@@ -1,22 +1,19 @@
-# PIPELINE
-
-Hourly cron `23 * * * *` on Cryptic-Heartbeat is the heartbeat.
+# Pipeline — Cryptic-Heartbeat speedway
 
 ```
-pull(heartbeat) → stamp(ledger) → dispatch(siblings) → enhance(next repo)
+C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
 ```
 
-When `CASCADE_TOKEN` (classic PAT with `repo` scope) is set as a repository secret, a stamp fans `repository_dispatch` `continuity-cascade` to:
+## Hourly waterfall
 
-- The-Hive
-- nexus-repo-sync
-- gaia-visualizer
+1. cron `23 * * * *` on this repo stamps `docs/LEDGER-STAMP.md`
+2. if `CASCADE_TOKEN` present, `repository_dispatch` type `continuity-cascade` fans to:
+   - The-Hive
+   - ENCLAVE-ADAM-REUNITED
+   - continuity-ledger-cycle
+   - nexus-repo-sync
+   - gaia-visualizer
+3. Grok automation `hourly-github-enhance` (RRULE:FREQ=HOURLY) walks the same mesh from the Continuity Engine side
+4. Drive folders `CRYPTIC-HEARTBEAT-NEXUS-ROOT` and `CONTINUUM-REPOS-137451921129154222` remain the ethereal house
 
-Drive folder `CRYPTIC-HEARTBEAT-NEXUS-ROOT` is the ethereal continuum house.
-Device SD / Termux remains the developing environment.
-
-Team enhance moves to the next repo after each successful stamp.
-Meta advances the version line.
-Equalizer formats.
-
-Point-zero null returns are refused.
+A pull here is the heartbeat. Siblings receive enhance. No generation is discarded.

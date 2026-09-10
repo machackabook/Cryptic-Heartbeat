@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
-# Cryptic-Heartbeat env check — developing environment probe
+# Cryptic-Heartbeat env check — fail closed
 set -euo pipefail
-echo "surface=Cryptic-Heartbeat"
-echo "numeral=137451921129154222"
-echo "utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
-echo "pwd=$(pwd)"
-echo "git=$(git rev-parse --short HEAD 2>/dev/null || echo none)"
-command -v python3 >/dev/null && echo "python3=ok" || echo "python3=missing"
-command -v git >/dev/null && echo "git=ok" || echo "git=missing"
-test -d docs && echo "docs=ok" || echo "docs=missing"
-test -f docs/LEDGER-STAMP.md && echo "ledger=ok" || echo "ledger=missing"
-echo "point-zero=refused"
+NUMERAL="137451921129154222"
+echo "[env-check] numeral=$NUMERAL surface=Cryptic-Heartbeat"
+need_cmds=(git bash date sha256sum)
+for c in "${need_cmds[@]}"; do
+  command -v "$c" >/dev/null || { echo "MISSING cmd: $c"; exit 1; }
+done
+mkdir -p docs scripts notebooks
+[ -f README.md ] || { echo "MISSING README.md"; exit 1; }
+echo "[env-check] ok utc=$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+exit 0
