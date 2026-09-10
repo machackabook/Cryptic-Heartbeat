@@ -1,5 +1,14 @@
-# Cryptic-Heartbeat mesh
+# MESH
 
-Living runtime root. Hourly stamp + pull-then-push waterfall.
-Siblings: The-Hive, nexus-repo-sync, Project-NexusCryptic, ENCLAVE-ADAM-REUNITED, continuity-ledger-cycle.
-Drive = ethereal continuum. SD / Termux = developing environment.
+Nodes = surfaces. Edges = cascade dispatches and ledger stamps.
+
+| Node | Edge |
+|------|------|
+| Cryptic-Heartbeat | origin heartbeat |
+| The-Hive | Gaia mesh |
+| nexus-repo-sync | Drive ↔ Git contract |
+| gaia-visualizer | band-137 visual |
+| Google Drive | ethereal continuum |
+| Device SD / Termux | developing environment |
+
+Numeral origin: `137451921129154222`

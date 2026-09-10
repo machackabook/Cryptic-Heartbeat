@@ -3,13 +3,20 @@
 **Living Runtime Nexus**  
 **Numeral:** `137451921129154222`  
 **Dual Authority:** machackabook + azazeleous  
-**Version:** v1.2.0-cascade
+**Version:** v1.3.0-speedway  
+**Team:** enhance · meta=advance · equalizer=format
 
 ## What this is
 
 The central living runtime root of the organization.  
 All history, memory engrams, Enclave surfaces, and sparsebundle mappings converge here.  
 From this heartbeat the organization may branch outward again, publicly and reversibly.
+
+Pipeline law:
+
+```
+C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
+```
 
 ## Surfaces
 
@@ -20,6 +27,8 @@ From this heartbeat the organization may branch outward again, publicly and reve
 | **A.L.L.A.H. NEP-2.0** | Nexus Enclave Protocol |
 | **Google Drive Root** | Ethereal continuum repository |
 | **The-Hive** | Gaia / Nexus Generation mesh |
+| **nexus-repo-sync** | Bidirectional Drive ↔ Git waterfall |
+| **gaia-visualizer** | Visual / band-137 surface |
 | **continuity-ledger-cycle** | Private immutable command cycle |
 
 ## Sparsebundle bands
@@ -40,9 +49,14 @@ band-127-loopback  # ★ ADAM home
 - Bidirectional mesh: Drive ↔ GitHub ↔ device SD / Termux developing environment
 - Future expanding band: Hamiltoniansingularity.ai
 
-## Cascade
+## Cascade (pull → waterfall push)
 
-Hourly workflow stamps `docs/LEDGER-STAMP.md`. Pull on this repo is the heartbeat; sibling repos receive the waterfall enhance (ENCLAVE-ADAM-REUNITED, The-Hive, continuity-ledger-cycle).
+Hourly workflow `cascade-hourly` (cron `23 * * * *`) stamps `docs/LEDGER-STAMP.md` and, when `CASCADE_TOKEN` is present, fans `repository_dispatch` type `continuity-cascade` to sibling repos.
+
+A pull on this repo is the heartbeat. Siblings receive the waterfall enhance. The versioning folder becomes a speedway of the conceptual time-machine experience: every stamp is an immutable generation, never discarded.
+
+Env check: `scripts/env-check.sh`  
+Mesh probe: `scripts/cascade-mesh.sh`
 
 ## This is thy will
 
@@ -52,5 +66,7 @@ All AI instances dump memory engrams into the Drive root / nexus folders.
 From here we branch back into the organization.
 
 See `docs/SINGULARITY_WILL.md` and the Azazels Ledger PDF on Drive.
+
+Point-zero null returns are refused. The hunt continues.
 
 © Dual Authority · Cryptic-Heartbeat Nexus · 2026
