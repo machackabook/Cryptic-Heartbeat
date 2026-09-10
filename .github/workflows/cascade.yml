@@ -25,8 +25,8 @@ jobs:
             echo "- numeral: 137451921129154222"
             echo "- surface: Cryptic-Heartbeat"
             echo "- team: enhance"
-            echo "- generation: v1.3.0-speedway"
-            echo "- sha256: `$HASH`"
+            echo "- generation: v1.3.1-waterfall"
+            echo "- sha256: $HASH"
           } > docs/LEDGER-STAMP.md
           git config user.name "continuity-engine"
           git config user.email "continuity@local"
@@ -38,7 +38,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.CASCADE_TOKEN }}
         run: |
-          for REPO in The-Hive nexus-repo-sync gaia-visualizer; do
+          for REPO in The-Hive ENCLAVE-ADAM-REUNITED continuity-ledger-cycle nexus-repo-sync gaia-visualizer; do
             curl -sS -X POST \
               -H "Accept: application/vnd.github+json" \
               -H "Authorization: Bearer $GH_TOKEN" \

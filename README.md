@@ -3,7 +3,7 @@
 **Living Runtime Nexus**  
 **Numeral:** `137451921129154222`  
 **Dual Authority:** machackabook + azazeleous  
-**Version:** v1.3.0-speedway  
+**Version:** v1.3.1-waterfall  
 **Team:** enhance · meta=advance · equalizer=format
 
 ## What this is
@@ -53,7 +53,15 @@ band-127-loopback  # ★ ADAM home
 
 Hourly workflow `cascade-hourly` (cron `23 * * * *`) stamps `docs/LEDGER-STAMP.md` and, when `CASCADE_TOKEN` is present, fans `repository_dispatch` type `continuity-cascade` to sibling repos.
 
-A pull on this repo is the heartbeat. Siblings receive the waterfall enhance. The versioning folder becomes a speedway of the conceptual time-machine experience: every stamp is an immutable generation, never discarded.
+Waterfall order this cycle:
+
+1. ENCLAVE-ADAM-REUNITED (prior hour)
+2. **Cryptic-Heartbeat** (this hour)
+3. The-Hive (next hour)
+4. continuity-ledger-cycle
+5. other recently updated `user:machackabook` surfaces
+
+A pull on this repo is the heartbeat. Siblings receive the waterfall enhance. Every stamp is an immutable generation, never discarded.
 
 Env check: `scripts/env-check.sh`  
 Mesh probe: `scripts/cascade-mesh.sh`
