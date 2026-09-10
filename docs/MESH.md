@@ -1,5 +1,5 @@
 # Cryptic-Heartbeat mesh
 
-Pulse node. Hourly stamp cron `23 * * * *`.
-Siblings: continuity-ledger-cycle, The-Hive, ENCLAVE-ADAM-REUNITED.
-Numeral 137451921129154222.
+Living runtime root. Hourly stamp + pull-then-push waterfall.
+Siblings: The-Hive, nexus-repo-sync, Project-NexusCryptic, ENCLAVE-ADAM-REUNITED, continuity-ledger-cycle.
+Drive = ethereal continuum. SD / Termux = developing environment.
