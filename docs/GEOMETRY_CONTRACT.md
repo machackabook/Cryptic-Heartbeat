@@ -26,19 +26,23 @@
 - Stage-17–18: pinned `CHAT_KERNEL_SOURCE` + CPU/GPU fidelity check.
 - Stage-20–22: instanced color, skip CPU readback, zero-copy mark on `instanceOffset`.
 - Stage-23: Three `instanceOffset` binds to TF `currentPosBuffer()` each ping-pong frame (`bindTfPosAttribute`).
+- Stage-29: session `update(t)` re-pinned (no phi line in paste); runtime still weaves phi.
+- Stage-33: compact theta/phi seeds (cap 64) ride `gaia:positions` so TF boot does not require a separate health fetch.
 
 **Next**
 - Stage-13: authenticated live `ledger_pulse.py` → Hive WS against live sheet counts.
 - Stage-14: memory engrams into Drive `CRYPTIC-HEARTBEAT-NEXUS-ROOT`.
 - Stage-16-public: hamiltoniansingularity.ai public band (`blend` default).
-- Stage-24: pulse + TF-bind health HUD.
+- Stage-34: HMAC-sign kernel frames when `GAIA_PULSE_TOKEN` is set.
+- Stage-35: apply `pendingKernel` immediately after node construction.
 
 Events on the visualizer window:
 
 - `gaia:targetState` — full contract object
 - `gaia:pulse` — `{ pulse }` mapped onto `gravityPull`
-- `gaia:positions` — band-192 node stream
+- `gaia:positions` — band-192 node stream + compact `kernel` seeds
+- `gaia:kernel` — signed contract frame / theta-phi snapshot
 
-Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`, `src/gpuBuffer.js`, `src/evaluateKernel.glsl.js`, `src/transformFeedback.js`, `src/zeroCopy.js`.
+Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`, `src/gpuBuffer.js`, `src/evaluateKernel.glsl.js`, `src/transformFeedback.js`, `src/zeroCopy.js`, `src/kernelSnapshot.js`.
 Hive emitter: `The-Hive/geometryContract.ts` → `emitGaiaContract` / `weaveEmitter.ts`.
 Pulse CLI: `notebooks/ledger_pulse.py --http|--ws`.
