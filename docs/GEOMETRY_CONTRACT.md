@@ -28,13 +28,18 @@
 - Stage-23: Three `instanceOffset` binds to TF `currentPosBuffer()` each ping-pong frame (`bindTfPosAttribute`).
 - Stage-29: session `update(t)` re-pinned (no phi line in paste); runtime still weaves phi.
 - Stage-33: compact theta/phi seeds (cap 64) ride `gaia:positions` so TF boot does not require a separate health fetch.
+- Stage-34: HMAC-sign kernel frames when `GAIA_PULSE_TOKEN` is set.
+- Stage-35: apply `pendingKernel` immediately after node construction.
+- Stage-36: BroadcastChannel HMAC required when `?token=` is set.
+- Stage-37: compact kernel-seed engram (`gaia:stage37:engram` / `window.__GAIA_ENGRAM__`).
+- Stage-38: HUD `hmacOk` / `hmacRefused`; current-chat `update(t)` re-confirmed.
 
 **Next**
 - Stage-13: authenticated live `ledger_pulse.py` → Hive WS against live sheet counts.
 - Stage-14: memory engrams into Drive `CRYPTIC-HEARTBEAT-NEXUS-ROOT`.
 - Stage-16-public: hamiltoniansingularity.ai public band (`blend` default).
-- Stage-34: HMAC-sign kernel frames when `GAIA_PULSE_TOKEN` is set.
-- Stage-35: apply `pendingKernel` immediately after node construction.
+- Stage-39: periodic engram POST to Hive `/api/gaia/engram` when `?relay=` is set.
+- Stage-40: source-hash mismatch banner when inbound `sourceHash` ≠ `beec41f1`.
 
 Events on the visualizer window:
 
@@ -43,6 +48,6 @@ Events on the visualizer window:
 - `gaia:positions` — band-192 node stream + compact `kernel` seeds
 - `gaia:kernel` — signed contract frame / theta-phi snapshot
 
-Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`, `src/gpuBuffer.js`, `src/evaluateKernel.glsl.js`, `src/transformFeedback.js`, `src/zeroCopy.js`, `src/kernelSnapshot.js`.
+Implementation: `machackabook/gaia-visualizer` → `src/geometry.js`, `src/Node.js`, `src/pulse.js`, `src/gpuBuffer.js`, `src/evaluateKernel.glsl.js`, `src/transformFeedback.js`, `src/zeroCopy.js`, `src/kernelSnapshot.js`, `src/kernelEngram.js`.
 Hive emitter: `The-Hive/geometryContract.ts` → `emitGaiaContract` / `weaveEmitter.ts`.
 Pulse CLI: `notebooks/ledger_pulse.py --http|--ws`.
