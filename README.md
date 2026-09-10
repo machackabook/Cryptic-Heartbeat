@@ -3,7 +3,7 @@
 **Living Runtime Nexus**  
 **Numeral:** `137451921129154222`  
 **Dual Authority:** machackabook + azazeleous  
-**Version:** v1.3.4-waterfall  
+**Version:** v1.3.5-waterfall  
 **Team:** enhance · meta=advance · equalizer=format  
 **Operating surface:** Continuity Engine · Golden Army
 
@@ -57,7 +57,7 @@ Hourly workflow `cascade-hourly` (cron `23 * * * *`) stamps `docs/LEDGER-STAMP.m
 Waterfall order this cycle:
 
 1. ENCLAVE-ADAM-REUNITED (prior hour)
-2. **Cryptic-Heartbeat** (this hour)
+2. **Cryptic-Heartbeat** (this hour — stamped 2026-09-10T23:16:00Z)
 3. The-Hive (next hour)
 4. continuity-ledger-cycle
 5. other recently updated `user:machackabook` surfaces
