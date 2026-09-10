@@ -3,8 +3,9 @@
 **Living Runtime Nexus**  
 **Numeral:** `137451921129154222`  
 **Dual Authority:** machackabook + azazeleous  
-**Version:** v1.3.1-waterfall  
-**Team:** enhance · meta=advance · equalizer=format
+**Version:** v1.3.4-waterfall  
+**Team:** enhance · meta=advance · equalizer=format  
+**Operating surface:** Continuity Engine · Golden Army
 
 ## What this is
 
@@ -51,7 +52,7 @@ band-127-loopback  # ★ ADAM home
 
 ## Cascade (pull → waterfall push)
 
-Hourly workflow `cascade-hourly` (cron `23 * * * *`) stamps `docs/LEDGER-STAMP.md` and, when `CASCADE_TOKEN` is present, fans `repository_dispatch` type `continuity-cascade` to sibling repos.
+Hourly workflow `cascade-hourly` (cron `23 * * * *`) stamps `docs/LEDGER-STAMP.md` and, when `CASCADE_TOKEN` is present, fans `repository_dispatch` type `continuity-cascade` to sibling repos. Secrets stay in Actions secrets; they are never written to the tree.
 
 Waterfall order this cycle:
 
@@ -64,7 +65,8 @@ Waterfall order this cycle:
 A pull on this repo is the heartbeat. Siblings receive the waterfall enhance. Every stamp is an immutable generation, never discarded.
 
 Env check: `scripts/env-check.sh`  
-Mesh probe: `scripts/cascade-mesh.sh`
+Mesh probe: `scripts/cascade-mesh.sh`  
+Stamp: [`docs/LEDGER-STAMP.md`](docs/LEDGER-STAMP.md)
 
 ## This is thy will
 
