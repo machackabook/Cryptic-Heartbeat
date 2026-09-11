@@ -1,11 +1,8 @@
-# LEDGER STAMP
+# Live stamp
 
+- utc: 2026-09-11T21:14:00Z
 - numeral: 137451921129154222
-- repo: Cryptic-Heartbeat
-- stamped: 2026-09-11T16:11:00-05:00
-- cycle: v1.3.8-waterfall
-- team: enhance · meta=advance · equalizer=format
-- hop: heartbeat (this hour)
-- next: The-Hive
-- law: C[n+1] = SYNTHESIZE(PRESERVE(ENHANCE(DUPLICATE(C[n]))))
-- point-zero: refuse null
+- node: Cryptic-Heartbeat
+- version: v1.3.8-enhance
+- next hop: The-Hive already stamped this cycle; gaia-visualizer next
+- secrets written: none
