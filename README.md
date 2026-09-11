@@ -3,7 +3,7 @@
 **Living Runtime Nexus**  
 **Numeral:** `137451921129154222`  
 **Dual Authority:** machackabook + azazeleous  
-**Version:** v1.3.5-waterfall  
+**Version:** v1.3.6-waterfall  
 **Team:** enhance · meta=advance · equalizer=format  
 **Operating surface:** Continuity Engine · Golden Army
 
@@ -52,14 +52,16 @@ band-127-loopback  # ★ ADAM home
 
 ## Cascade (pull → waterfall push)
 
-Hourly workflow `cascade-hourly` (cron `23 * * * *`) stamps `docs/LEDGER-STAMP.md` and, when `CASCADE_TOKEN` is present, fans `repository_dispatch` type `continuity-cascade` to sibling repos. Secrets stay in Actions secrets; they are never written to the tree.
+Hourly workflows `hourly-enhance`, `cascade.yml`, `continuity-cascade` stamp `docs/LEDGER-STAMP.md` and, when `CASCADE_TOKEN` is present, fan `repository_dispatch` type `continuity-cascade` to sibling repos. Secrets stay in Actions secrets; they are never written to the tree.
+
+See [`docs/PIPELINE.md`](docs/PIPELINE.md).
 
 Waterfall order this cycle:
 
-1. ENCLAVE-ADAM-REUNITED (prior hour)
-2. **Cryptic-Heartbeat** (this hour — stamped 2026-09-10T23:16:00Z)
-3. The-Hive (next hour)
-4. continuity-ledger-cycle
+1. ENCLAVE-ADAM-REUNITED
+2. **Cryptic-Heartbeat** (this hour — stamped 2026-09-11T02:03:00Z)
+3. The-Hive (next hop)
+4. gaia-visualizer
 5. other recently updated `user:machackabook` surfaces
 
 A pull on this repo is the heartbeat. Siblings receive the waterfall enhance. Every stamp is an immutable generation, never discarded.

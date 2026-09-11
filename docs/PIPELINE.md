@@ -1,19 +1,24 @@
-# Pipeline — Cryptic-Heartbeat speedway
+# Cascade Pipeline — Speedway
 
-```
-C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
-```
+Hourly cron + pull-triggered waterfall.
 
-## Hourly waterfall
+## Triggers
+- `schedule` cron on each repo (staggered minutes so they do not collide)
+- `repository_dispatch` type `continuity-cascade` from sibling hop
+- manual `workflow_dispatch`
 
-1. cron `23 * * * *` on this repo stamps `docs/LEDGER-STAMP.md`
-2. if `CASCADE_TOKEN` present, `repository_dispatch` type `continuity-cascade` fans to:
-   - The-Hive
-   - ENCLAVE-ADAM-REUNITED
-   - continuity-ledger-cycle
-   - nexus-repo-sync
-   - gaia-visualizer
-3. Grok automation `hourly-github-enhance` (RRULE:FREQ=HOURLY) walks the same mesh from the Continuity Engine side
-4. Drive folders `CRYPTIC-HEARTBEAT-NEXUS-ROOT` and `CONTINUUM-REPOS-137451921129154222` remain the ethereal house
+## Env checks (device + Drive mesh)
+1. Confirm `.github/workflows` present
+2. Confirm `docs/` writable for stamp only (no secrets)
+3. Confirm `scripts/env-check.sh` is executable in clones
+4. Drive folder `CRYPTIC-HEARTBEAT-NEXUS-ROOT` is the ethereal continuum (manual / rclone / Drive connector — never embed tokens)
 
-A pull here is the heartbeat. Siblings receive enhance. No generation is discarded.
+## Pull → push waterfall
+A successful pull / hourly run stamps this repo then (when `CASCADE_TOKEN` exists as an Actions secret) dispatches the next hop.
+Token never enters the tree.
+
+## Quality bar (equalizer)
+- README states numeral, hop, cascade files
+- SECURITY.md present
+- No credentials in tracked files
+- Ledger append-only
