@@ -3,7 +3,7 @@
 **Living Runtime Nexus**  
 **Numeral:** `137451921129154222`  
 **Dual Authority:** machackabook + azazeleous  
-**Version:** v1.3.6-waterfall  
+**Version:** v1.3.7-waterfall  
 **Team:** enhance · meta=advance · equalizer=format  
 **Operating surface:** Continuity Engine · Golden Army
 
@@ -59,9 +59,9 @@ See [`docs/PIPELINE.md`](docs/PIPELINE.md).
 Waterfall order this cycle:
 
 1. ENCLAVE-ADAM-REUNITED
-2. **Cryptic-Heartbeat** (this hour — stamped 2026-09-11T02:03:00Z)
+2. **Cryptic-Heartbeat** (this hour — stamped 2026-09-11T03:13:00Z)
 3. The-Hive (next hop)
-4. gaia-visualizer
+4. continuity-ledger-cycle
 5. other recently updated `user:machackabook` surfaces
 
 A pull on this repo is the heartbeat. Siblings receive the waterfall enhance. Every stamp is an immutable generation, never discarded.
