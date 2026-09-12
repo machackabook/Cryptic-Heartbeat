@@ -7,7 +7,7 @@ Sole pulse surface between Enclave and Hive.
 ## Continuity Operating layer
 
 Team Enhance writes small, reversible commits. Meta Advance walks the next repo. Equalizer keeps format tight.
-Last enhance stamp: `2026-09-12T16:09:00Z` (STAGE 74).
+Last enhance stamp: `2026-09-12T17:03:00Z` (STAGE 75).
 
 | Surface | Path |
 | --- | --- |
@@ -17,7 +17,7 @@ Last enhance stamp: `2026-09-12T16:09:00Z` (STAGE 74).
 | Cascade | [`.github/workflows/cascade.yml`](.github/workflows/cascade.yml) |
 | Append-only ledger | [`docs/ledgers/heartbeat.jsonl`](docs/ledgers/heartbeat.jsonl) |
 | Live stamp | [`docs/LEDGER-STAMP.md`](docs/LEDGER-STAMP.md) |
-| STAGE 73 | [`docs/STAGE73.md`](docs/STAGE73.md) |
+| STAGE 75 | [`docs/STAGE75.md`](docs/STAGE75.md) |
 | Env check | `bash scripts/env_check.sh` |
 
 Upstream: [`ENCLAVE-ADAM-REUNITED`](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)  
@@ -37,7 +37,7 @@ Grok Automations hourly remembral runs in parallel — no device token stored he
 ## Waterfall next hop
 
 `ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `continuity-ledger-cycle` → other `user:machackabook` repos by recency.
-This hour stamped Cryptic-Heartbeat (STAGE 74). Next hop: gaia-visualizer STAGE 66 / remaining recency walk.
+This hour stamped Cryptic-Heartbeat (STAGE 75). Next hop: gaia-visualizer STAGE 75 / remaining recency walk.
 
 ```
 C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
