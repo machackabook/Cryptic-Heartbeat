@@ -1,6 +1,6 @@
 # Next stages · Cryptic-Heartbeat
 
-Compiled 2026-09-12T01:00Z from the live chat surface and connected repositories.
+Compiled 2026-09-12T15:02Z from the live chat surface and connected repositories.
 
 Numeral: `137451921129154222`  
 Dual Authority: machackabook + azazeleous
@@ -20,7 +20,9 @@ Dual Authority: machackabook + azazeleous
 - Stage-16: TF/GLSL maps the full 31-manifold set; `uBlend` on GPU.
 - Stage-41..46: evaluateChatKernelInto, session pin `beec41f1`, living hash `7cd81012`, engram GET/replay, continuity stamps.
 - Stage-47..62: live chat reconfirmed the four-geometry session kernel. Klein stays runtime-only. Stage 62 GPU lerp 0.05.
-- Stage-63: session paste reconfirmed 2026-09-11 20:00 CDT. TF `aPrevPos` seeded from first CPU evaluate. Hive + gaia `STAGE=63`. Klein still runtime-only.
+- Stage-63: session paste reconfirmed 2026-09-11 20:00 CDT. TF `aPrevPos` seeded from first CPU evaluate.
+- Stage-65..71: hopf + figure8 + trefoil CPU extras aligned to GPU ids. Session paste still four geometries.
+- Stage-72: live chat 2026-09-12 10:02 CDT reconfirmed `beec41f1`. Hive + gaia `STAGE=72`.
 
 ## Next stages (ordered)
 
@@ -39,15 +41,17 @@ Dual Authority: machackabook + azazeleous
 
 58. Promote klein into the session `update(t)` switch only after a chat paste includes it.
 
-64. Re-seed TF previous-position buffer when geometry changes so lerp does not drag through leftover manifolds.
+66-session. Promote hopf/figure8/trefoil into the session switch only after a paste includes those cases.
+
+73. Fidelity sample on living-hash mismatch (`7cd81012`).
 
 ## Repository map (connected)
 
 | Repo | Role | State after this pass |
 |------|------|------------------------|
-| Cryptic-Heartbeat | Living runtime root | stage-63 compiled |
-| gaia-visualizer | band-137-visual | stage-63, TF origin seed |
-| The-Hive | Gaia / Nexus studio | STAGE=63, matchSessionPaste |
+| Cryptic-Heartbeat | Living runtime root | stage-72 compiled |
+| gaia-visualizer | band-137-visual | stage-72, session pin held |
+| The-Hive | Gaia / Nexus studio | STAGE=72, matchSessionPaste |
 | TheLedgerIndex | public index | unchanged this pass |
 | ENCLAVE-ADAM-REUNITED | band-127 end/exit | waterfall hop continues |
 | Gemini-Nexus-OS | operator OS | consume targetState next |
