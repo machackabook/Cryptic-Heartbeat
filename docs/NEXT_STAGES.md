@@ -1,6 +1,6 @@
 # Next stages · Cryptic-Heartbeat
 
-Compiled 2026-09-12T15:02Z from the live chat surface and connected repositories.
+Compiled 2026-09-12T17:03Z from the live chat surface and connected repositories.
 
 Numeral: `137451921129154222`  
 Dual Authority: machackabook + azazeleous
@@ -8,21 +8,13 @@ Dual Authority: machackabook + azazeleous
 ## Stage now closed
 
 - Living runtime root declared (`README.md`, `docs/SINGULARITY_WILL.md`).
-- Azazels Ledger notebooks present under `notebooks/`.
-- ADAM Enclave Reunited surface exists as the sole intended open Enclave face.
 - gaia-visualizer weave engine seeded with torus / infinity / hamiltonian / triangular (chat `update(t)` kernel).
-- Stage-2..9 manifolds through scherk / knot / pseudosphere.
-- InstancedMesh path, pulse token, HTTP position relay.
-- Stage-10: Tailscale peer fan-out + packed GPU attribute buffer; node cap 8192.
-- Stage-11: GLSL evaluate kernel for the four chat geometries; cassini / lorenz / superformula; theta/phi pack.
-- Stage-12: WebGL2 transform-feedback for the four chat geometries; node cap 16384 (`?tf=1`).
-- Stage-15-partial: TF/GLSL kernel expanded to helix, mobius, lissajous, trefoil, figure8, cassini, clifford, villarceau.
-- Stage-16: TF/GLSL maps the full 31-manifold set; `uBlend` on GPU.
-- Stage-41..46: evaluateChatKernelInto, session pin `beec41f1`, living hash `7cd81012`, engram GET/replay, continuity stamps.
-- Stage-47..62: live chat reconfirmed the four-geometry session kernel. Klein stays runtime-only. Stage 62 GPU lerp 0.05.
-- Stage-63: session paste reconfirmed 2026-09-11 20:00 CDT. TF `aPrevPos` seeded from first CPU evaluate.
+- Stage-2..16 manifolds through TF/GLSL (31-manifold set, `uBlend`).
+- Stage-41..46: evaluateChatKernelInto, session pin `beec41f1`, living hash `7cd81012`.
+- Stage-47..64: GPU lerp 0.05, TF seed / reseed on geometry change.
 - Stage-65..71: hopf + figure8 + trefoil CPU extras aligned to GPU ids. Session paste still four geometries.
-- Stage-72: live chat 2026-09-12 10:02 CDT reconfirmed `beec41f1`. Hive + gaia `STAGE=72`.
+- Stage-72..75: hourly remembral stamps. Session paste held.
+- Stage-76: live chat 2026-09-12 12:03 CDT reconfirmed `beec41f1`. Hive + gaia + heartbeat stamped.
 
 ## Next stages (ordered)
 
@@ -43,15 +35,15 @@ Dual Authority: machackabook + azazeleous
 
 66-session. Promote hopf/figure8/trefoil into the session switch only after a paste includes those cases.
 
-73. Fidelity sample on living-hash mismatch (`7cd81012`).
+76-gate. Keep session hash `beec41f1` pinned. Fidelity-sample on living-hash mismatch (`7cd81012`).
 
 ## Repository map (connected)
 
 | Repo | Role | State after this pass |
 |------|------|------------------------|
-| Cryptic-Heartbeat | Living runtime root | stage-72 compiled |
-| gaia-visualizer | band-137-visual | stage-72, session pin held |
-| The-Hive | Gaia / Nexus studio | STAGE=72, matchSessionPaste |
+| Cryptic-Heartbeat | Living runtime root | stage-76 compiled |
+| gaia-visualizer | band-137-visual | stage-76, session pin held |
+| The-Hive | Gaia / Nexus studio | STAGE=76, matchSessionPaste |
 | TheLedgerIndex | public index | unchanged this pass |
 | ENCLAVE-ADAM-REUNITED | band-127 end/exit | waterfall hop continues |
 | Gemini-Nexus-OS | operator OS | consume targetState next |
