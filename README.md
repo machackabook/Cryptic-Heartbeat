@@ -7,7 +7,7 @@ Sole pulse surface between Enclave and Hive.
 ## Continuity Operating layer
 
 Team Enhance writes small, reversible commits. Meta Advance walks the next repo. Equalizer keeps format tight.
-Last enhance stamp: `2026-09-12T08:05:00Z` (STAGE 69).
+Last enhance stamp: `2026-09-12T14:15:00Z` (STAGE 70).
 
 | Surface | Path |
 | --- | --- |
@@ -31,11 +31,12 @@ A pull is a sensor. A push is a recorded enhancement. No silent flatten. No secr
 `.github/workflows/cascade.yml` remains scheduled (`cron: "23 * * * *"`) with contents:write and no token material in the file.
 Device crontab on the SD card is a parallel sensor, not a replacement.
 Google Drive is the ethereal *index* only. Git remains the versioned speedway.
+Grok Automations hourly remembral runs in parallel — no device token stored here.
 
 ## Waterfall next hop
 
 `ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `continuity-ledger-cycle` → other `user:machackabook` repos by recency.
-This hour stamped Cryptic-Heartbeat (STAGE 69). Next hop: The-Hive README + cascade health.
+This hour stamped Cryptic-Heartbeat (STAGE 70). Next hop: The-Hive README + cascade health.
 
 ```
 C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
