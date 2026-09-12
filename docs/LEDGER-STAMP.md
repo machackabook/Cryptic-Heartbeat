@@ -1,6 +1,8 @@
-# LEDGER-STAMP
+# LEDGER STAMP
 
-Last public stamp: `2026-09-12T01:14:00Z` STAGE 65
-Numeral 137451921129154222
-Surface: Cryptic-Heartbeat
-Next: The-Hive
+- numeral: 137451921129154222
+- stage: 66
+- iso: 2026-09-12T02:09:00Z
+- team: enhance / meta-advance
+- hop: Cryptic-Heartbeat -> The-Hive
+- upstream: ENCLAVE-ADAM-REUNITED STAGE 67

@@ -7,7 +7,7 @@ Sole pulse surface between Enclave and Hive.
 ## Continuity Operating layer
 
 Team Enhance writes small, reversible commits. Meta Advance walks the next repo. Equalizer keeps format tight.
-Last enhance stamp: `2026-09-12T01:14:00Z` (STAGE 65).
+Last enhance stamp: `2026-09-12T02:09:00Z` (STAGE 66).
 
 | Surface | Path |
 | --- | --- |
@@ -17,7 +17,7 @@ Last enhance stamp: `2026-09-12T01:14:00Z` (STAGE 65).
 | Cascade | [`.github/workflows/cascade.yml`](.github/workflows/cascade.yml) |
 | Append-only ledger | [`docs/ledgers/heartbeat.jsonl`](docs/ledgers/heartbeat.jsonl) |
 | Live stamp | [`docs/LEDGER-STAMP.md`](docs/LEDGER-STAMP.md) |
-| Hour stamp | [`docs/LEDGER-2026-09-12-0114.md`](docs/LEDGER-2026-09-12-0114.md) |
+| Hour stamp | [`docs/LEDGER-2026-09-12-0209.md`](docs/LEDGER-2026-09-12-0209.md) |
 | Env check | `bash scripts/env_check.sh` |
 
 Upstream: [`ENCLAVE-ADAM-REUNITED`](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)  
@@ -34,7 +34,7 @@ Google Drive is the ethereal *index* only. Git remains the versioned speedway.
 ## Waterfall next hop
 
 `ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `gaia-visualizer` → other `user:machackabook` repos by recency.
-This hour touched Cryptic-Heartbeat STAGE 65. Next hop: The-Hive README + cascade health.
+This hour touched Cryptic-Heartbeat STAGE 66 after Enclave STAGE 67. Next hop: The-Hive README + cascade health.
 
 ```
 C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
