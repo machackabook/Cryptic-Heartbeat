@@ -1,11 +1,6 @@
-# LEDGER STAMP — Cryptic-Heartbeat
+# LEDGER-STAMP
 
-- utc: `2026-09-12T01:04:00Z`
-- stage: `64`
-- numeral: `137451921129154222`
-- surface: Cryptic-Heartbeat
-- team: enhance
-- generation: v1.3.1-waterfall
-- role: nexus heartbeat
-- cascade: healthy (`cron: "23 * * * *"`, contents:write, no token in tree)
-- next hop after this hour: The-Hive
+Last public stamp: `2026-09-12T01:14:00Z` STAGE 65
+Numeral 137451921129154222
+Surface: Cryptic-Heartbeat
+Next: The-Hive

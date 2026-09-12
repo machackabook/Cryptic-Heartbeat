@@ -7,7 +7,7 @@ Sole pulse surface between Enclave and Hive.
 ## Continuity Operating layer
 
 Team Enhance writes small, reversible commits. Meta Advance walks the next repo. Equalizer keeps format tight.
-Last enhance stamp: `2026-09-12T01:04:00Z` (STAGE 64).
+Last enhance stamp: `2026-09-12T01:14:00Z` (STAGE 65).
 
 | Surface | Path |
 | --- | --- |
@@ -17,7 +17,7 @@ Last enhance stamp: `2026-09-12T01:04:00Z` (STAGE 64).
 | Cascade | [`.github/workflows/cascade.yml`](.github/workflows/cascade.yml) |
 | Append-only ledger | [`docs/ledgers/heartbeat.jsonl`](docs/ledgers/heartbeat.jsonl) |
 | Live stamp | [`docs/LEDGER-STAMP.md`](docs/LEDGER-STAMP.md) |
-| Hour stamp | [`docs/LEDGER-2026-09-12-0104.md`](docs/LEDGER-2026-09-12-0104.md) |
+| Hour stamp | [`docs/LEDGER-2026-09-12-0114.md`](docs/LEDGER-2026-09-12-0114.md) |
 | Env check | `bash scripts/env_check.sh` |
 
 Upstream: [`ENCLAVE-ADAM-REUNITED`](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)  
@@ -29,11 +29,12 @@ Downstream visual: [`gaia-visualizer`](https://github.com/machackabook/gaia-visu
 A pull is a sensor. A push is a recorded enhancement. No silent flatten. No secret in the tree.
 `.github/workflows/cascade.yml` remains scheduled (`cron: "23 * * * *"`) with contents:write and no token material in the file.
 Device crontab on the SD card is a parallel sensor, not a replacement.
+Google Drive is the ethereal *index* only. Git remains the versioned speedway.
 
 ## Waterfall next hop
 
-`ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `continuity-ledger-cycle` → other `user:machackabook` repos by recency.
-This hour touched Cryptic-Heartbeat. Next hour: The-Hive cascade health + README tick.
+`ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `gaia-visualizer` → other `user:machackabook` repos by recency.
+This hour touched Cryptic-Heartbeat STAGE 65. Next hop: The-Hive README + cascade health.
 
 ```
 C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
