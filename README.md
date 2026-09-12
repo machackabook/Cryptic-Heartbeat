@@ -7,7 +7,7 @@ Sole pulse surface between Enclave and Hive.
 ## Continuity Operating layer
 
 Team Enhance writes small, reversible commits. Meta Advance walks the next repo. Equalizer keeps format tight.
-Last enhance stamp: `2026-09-12T15:10:00Z` (STAGE 73).
+Last enhance stamp: `2026-09-12T16:09:00Z` (STAGE 74).
 
 | Surface | Path |
 | --- | --- |
@@ -37,7 +37,7 @@ Grok Automations hourly remembral runs in parallel — no device token stored he
 ## Waterfall next hop
 
 `ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `continuity-ledger-cycle` → other `user:machackabook` repos by recency.
-This hour stamped Cryptic-Heartbeat (STAGE 73). Next hop: gaia-visualizer / The-Hive kernel.
+This hour stamped Cryptic-Heartbeat (STAGE 74). Next hop: gaia-visualizer STAGE 66 / remaining recency walk.
 
 ```
 C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
