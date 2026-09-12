@@ -7,7 +7,7 @@ Sole pulse surface between Enclave and Hive.
 ## Continuity Operating layer
 
 Team Enhance writes small, reversible commits. Meta Advance walks the next repo. Equalizer keeps format tight.
-Last enhance stamp: `2026-09-12T04:09:00Z` (STAGE 68).
+Last enhance stamp: `2026-09-12T08:05:00Z` (STAGE 69).
 
 | Surface | Path |
 | --- | --- |
@@ -21,6 +21,7 @@ Last enhance stamp: `2026-09-12T04:09:00Z` (STAGE 68).
 
 Upstream: [`ENCLAVE-ADAM-REUNITED`](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)  
 Collective: [`The-Hive`](https://github.com/machackabook/The-Hive)  
+Ledger cycle: [`continuity-ledger-cycle`](https://github.com/machackabook/continuity-ledger-cycle)  
 Sync mesh: [`nexus-repo-sync`](https://github.com/machackabook/nexus-repo-sync)  
 Downstream visual: [`gaia-visualizer`](https://github.com/machackabook/gaia-visualizer)
 
@@ -33,8 +34,8 @@ Google Drive is the ethereal *index* only. Git remains the versioned speedway.
 
 ## Waterfall next hop
 
-`ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `gaia-visualizer` → other `user:machackabook` repos by recency.
-This hour received STAGE 68 from nexus-repo-sync. Next hop: The-Hive README + cascade health.
+`ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `continuity-ledger-cycle` → other `user:machackabook` repos by recency.
+This hour stamped Cryptic-Heartbeat (STAGE 69). Next hop: The-Hive README + cascade health.
 
 ```
 C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
