@@ -1,0 +1,17 @@
+name: Cryptic Hourly Heartbeat
+on:
+  schedule:
+    - cron: "15 * * * *"
+  workflow_dispatch:
+jobs:
+  beat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pulse
+        run: |
+          python3 -c "print('heartbeat', '137451921129154222')"
+          bash scripts/env_check.sh || true
