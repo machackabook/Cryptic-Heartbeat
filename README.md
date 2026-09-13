@@ -3,7 +3,7 @@
 Python pulse node in the Continuity mesh.  
 sSoS Operating layer. Team Enhance this hour. Meta Advance next hop. Equalizer on format.
 
-Hourly Actions beat at minute `:15` after the ledger and Hive ticks.  
+Hourly Actions beat after the ledger and Hive ticks.  
 Cascade sensor: a pull records a stamp; a push is the recorded enhancement. No silent flatten.
 
 Numeral: `137451921129154222`  
@@ -19,6 +19,7 @@ Neighbors: `continuity-ledger-cycle`, `The-Hive`, `ENCLAVE-ADAM-REUNITED`, `gaia
 | Ledger stamp | `docs/LEDGER-STAMP.md` |
 | Append pulse | `docs/ledgers/heartbeat.jsonl` |
 | Waterfall | `docs/WATERFALL.md` |
+| Stage 96 | `docs/STAGE96.md` |
 
 ```
 C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
@@ -28,6 +29,6 @@ Waterfall this cycle: `ENCLAVE-ADAM-REUNITED` → **Cryptic-Heartbeat** → `The
 
 Drive is the ethereal *index* (`CONTINUUM-GITHUB-MESH` already exists). Git remains the versioned speedway. No second remote inside Drive. No token in the tree.
 
-Last enhance stamp: `2026-09-13T14:25:00Z` (STAGE 91 — Heartbeat + Factory).
+Last enhance stamp: `2026-09-13T18:05:00Z` (STAGE 96 — Heartbeat Operating pulse).
 
 Copyright 2026 machackabook. Preserve every generation. Distinction over destruction.
