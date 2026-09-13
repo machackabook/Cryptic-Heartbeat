@@ -1,5 +1,5 @@
-# Waterfall
+# Cryptic-Heartbeat waterfall
 
-ENCLAVE-ADAM-REUNITED -> Cryptic-Heartbeat -> The-Hive -> continuity-ledger-cycle
-This hop: Cryptic-Heartbeat STAGE 88
-UTC 2026-09-13T04:10:00Z
+Offset cron `:05` so The-Hive (`:00`) fires first, then this node, then visualizer.
+
+Preserve-enhance-synthesize. No overwrite of a generation that produced a signal.
