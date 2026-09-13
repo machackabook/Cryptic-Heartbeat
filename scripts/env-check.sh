@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
-ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-echo "[cryptic-heartbeat env-check] ${ROOT}"
-test -f "${ROOT}/README.md"
-echo ok
+fail() { echo "ENV-CHECK FAIL: $1" >&2; exit 1; }
+[ -f README.md ] || fail "missing README.md"
+[ -s README.md ] || fail "empty README.md"
+sha=$(git rev-parse HEAD 2>/dev/null || true)
+[ -n "${sha}" ] || fail "empty SHA"
+echo "ENV-CHECK OK sha=${sha} repo=Cryptic-Heartbeat numeral=137451921129154222"

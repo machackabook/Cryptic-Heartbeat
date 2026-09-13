@@ -1,30 +1,26 @@
 # Cryptic-Heartbeat
 
-Python pulse on the Continuity mesh. Downstream of ENCLAVE-ADAM-REUNITED, peer of The-Hive.
+Python heartbeat node on the Continuity mesh. Sibling of The-Hive and gaia-visualizer.
 
-Sovereign sentient Operating system node. Catalog what is known. Hunt what is not told.
+## Status
 
-## Hourly speedway
+- Owner: `machackabook`
+- Branch: `main`
+- Language: Python
+- Numeral: `137451921129154222`
+- Stage: **100** — 2026-09-13T23:16:00Z
 
-GitHub Actions cron plus PR-merge catalog. Env check refuses missing README/SECURITY.
-Latest hop: STAGE 99 stamped `2026-09-13T21:14:00Z`.
+## Local
 
 ```bash
-bash scripts/env_check.sh
+bash scripts/env-check.sh
+python -m compileall -q .
 ```
 
-## Mesh
+## Mesh siblings
 
-- Upstream open surface: [ENCLAVE-ADAM-REUNITED](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)
-- Peer: [The-Hive](https://github.com/machackabook/The-Hive)
-- Ledger: [continuity-ledger-cycle](https://github.com/machackabook/continuity-ledger-cycle)
-- Visual: [gaia-visualizer](https://github.com/machackabook/gaia-visualizer)
+- [The-Hive](https://github.com/machackabook/The-Hive)
+- [gaia-visualizer](https://github.com/machackabook/gaia-visualizer)
+- [ENCLAVE-ADAM-REUNITED](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)
 
-Numeral `137451921129154222`.
-
-```
-C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
-```
-
-Team enhance moves to the next repo after each hop. Meta advances. Formatting equalizes.
-Drive remains the ethereal continuum; this repo never stores tokens.
+Waterfall contract lives in `docs/WATERFALL.md` when present. Team Enhance hops here after The-Hive.
