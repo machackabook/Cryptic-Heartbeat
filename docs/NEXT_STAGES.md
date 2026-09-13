@@ -1,6 +1,6 @@
 # Next stages · Cryptic-Heartbeat
 
-Compiled 2026-09-13T17:00Z from the live chat surface and connected repositories.
+Compiled 2026-09-13T18:13Z from the live chat surface and connected repositories.
 
 Numeral: `137451921129154222`  
 Dual Authority: machackabook + azazeleous
@@ -19,6 +19,7 @@ Dual Authority: machackabook + azazeleous
 - Stage-93: live chat 2026-09-13 10:01 CDT. Pin held.
 - Stage-94: live chat 2026-09-13 11:13 CDT. Same four-geometry paste. No extras promoted.
 - Stage-95: live chat 2026-09-13 12:00 CDT. Same four-geometry paste. No extras promoted.
+- Stage-96: live chat 2026-09-13 13:11 CDT. Same four-geometry paste. No extras promoted.
 
 ## Next stages (ordered)
 
@@ -39,15 +40,15 @@ Dual Authority: machackabook + azazeleous
 
 66-session. Promote hopf/figure8/trefoil into the session switch only after a paste includes those cases.
 
-95-gate. Keep session hash `beec41f1` pinned. Fidelity-sample on living-hash mismatch (`7cd81012`).
+96-gate. Keep session hash `beec41f1` pinned. Fidelity-sample on living-hash mismatch (`7cd81012`).
 
 ## Repository map (connected)
 
 | Repo | Role | State after this pass |
 |------|------|------------------------|
-| Cryptic-Heartbeat | Living runtime root | stage-95 compiled |
-| gaia-visualizer | band-137-visual | stage-95, session pin held |
-| The-Hive | Gaia / Nexus studio | STAGE=95, matchSessionPaste |
+| Cryptic-Heartbeat | Living runtime root | stage-96 compiled |
+| gaia-visualizer | band-137-visual | stage-96, session pin held |
+| The-Hive | Gaia / Nexus studio | STAGE=96, matchSessionPaste |
 | TheLedgerIndex | public index | unchanged this pass |
 | ENCLAVE-ADAM-REUNITED | band-127 end/exit | waterfall hop continues |
 | Gemini-Nexus-OS | operator OS | consume targetState next |
