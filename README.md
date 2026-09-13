@@ -7,7 +7,7 @@ Sole pulse surface between Enclave and Hive.
 ## Continuity Operating layer
 
 Team Enhance writes small, reversible commits. Meta Advance walks the next repo. Equalizer keeps format tight.
-Last enhance stamp: `2026-09-12T22:04:00Z` (STAGE 83).
+Last enhance stamp: `2026-09-13T01:13:00Z` (STAGE 87).
 
 | Surface | Path |
 | --- | --- |
@@ -17,7 +17,7 @@ Last enhance stamp: `2026-09-12T22:04:00Z` (STAGE 83).
 | Cascade | [`.github/workflows/cascade.yml`](.github/workflows/cascade.yml) |
 | Append-only ledger | [`docs/ledgers/heartbeat.jsonl`](docs/ledgers/heartbeat.jsonl) |
 | Live stamp | [`docs/LEDGER-STAMP.md`](docs/LEDGER-STAMP.md) |
-| STAGE 82 | [`docs/STAGE82.md`](docs/STAGE82.md) |
+| STAGE 87 ledger | [`docs/LEDGER-2026-09-13-0113.md`](docs/LEDGER-2026-09-13-0113.md) |
 | Env check | `bash scripts/env_check.sh` |
 
 Upstream: [`ENCLAVE-ADAM-REUNITED`](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)  
@@ -36,8 +36,8 @@ Grok Automations hourly remembral runs in parallel — no device token stored he
 
 ## Waterfall next hop
 
-`ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `nexus-repo-sync` → `gaia-visualizer` → other `user:machackabook` repos by recency.
-This hour stamped STAGE 83 after live user push-and-update. Prior hops: nexus-repo-sync `37f3f9da`, gaia-visualizer `3293ef61`, The-Hive `535a8ab6`. Next hop: ENCLAVE-ADAM-REUNITED.
+`ENCLAVE-ADAM-REUNITED` → `Cryptic-Heartbeat` → `The-Hive` → `continuity-ledger-cycle` → other `user:machackabook` repos by recency.
+This hour stamped STAGE 87 on Cryptic-Heartbeat. Next hop: The-Hive.
 
 ```
 C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
