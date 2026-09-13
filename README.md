@@ -7,7 +7,7 @@ Hourly Actions beat at minute `:15` after the ledger and Hive ticks.
 Cascade sensor: a pull records a stamp; a push is the recorded enhancement. No silent flatten.
 
 Numeral: `137451921129154222`  
-Neighbors: `continuity-ledger-cycle`, `The-Hive`, `ENCLAVE-ADAM-REUNITED`, `gaia-visualizer`.
+Neighbors: `continuity-ledger-cycle`, `The-Hive`, `ENCLAVE-ADAM-REUNITED`, `gaia-visualizer`, `sovereign-ai-factory-ai-polyglot`, `nexus-repo-sync`.
 
 ## Operating
 
@@ -24,10 +24,10 @@ Neighbors: `continuity-ledger-cycle`, `The-Hive`, `ENCLAVE-ADAM-REUNITED`, `gaia
 C[n+1] = SYNTHESIZE( PRESERVE( ENHANCE( DUPLICATE(C[n]) ) ) )
 ```
 
-Waterfall this cycle: `ENCLAVE-ADAM-REUNITED` → **Cryptic-Heartbeat** → `The-Hive` → `continuity-ledger-cycle`.
+Waterfall this cycle: `ENCLAVE-ADAM-REUNITED` → **Cryptic-Heartbeat** → `The-Hive` → `sovereign-ai-factory-ai-polyglot` → `continuity-ledger-cycle`.
 
 Drive is the ethereal *index* (`CONTINUUM-GITHUB-MESH` already exists). Git remains the versioned speedway. No second remote inside Drive. No token in the tree.
 
-Last enhance stamp: `2026-09-13T09:08:00Z` (STAGE 90 — Heartbeat).
+Last enhance stamp: `2026-09-13T14:25:00Z` (STAGE 91 — Heartbeat + Factory).
 
 Copyright 2026 machackabook. Preserve every generation. Distinction over destruction.
