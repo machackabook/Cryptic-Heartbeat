@@ -1,47 +1,23 @@
-name: cascade-hourly
+name: cascade
 on:
   schedule:
-    - cron: "23 * * * *"
+    - cron: "21 * * * *"
   workflow_dispatch:
-  push:
-    branches: [main]
-  repository_dispatch:
-    types: [continuity-cascade, pull-then-push]
 permissions:
   contents: write
 jobs:
-  enhance:
+  hop:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: stamp-and-env
+      - name: Record cascade hop
         run: |
-          mkdir -p docs scripts
-          TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          HASH=$(printf '%s' "$TS-137451921129154222-heartbeat" | sha256sum | awk '{print $1}')
-          {
-            echo "# LEDGER-STAMP"
-            echo "- utc: $TS"
-            echo "- numeral: 137451921129154222"
-            echo "- surface: Cryptic-Heartbeat"
-            echo "- team: enhance"
-            echo "- generation: v1.3.1-waterfall"
-            echo "- sha256: $HASH"
-          } > docs/LEDGER-STAMP.md
+          mkdir -p docs
+          printf '# Waterfall\n\nENCLAVE-ADAM-REUNITED -> Cryptic-Heartbeat -> The-Hive -> continuity-ledger-cycle\nThis hop: Cryptic-Heartbeat STAGE 88\nUTC %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > docs/WATERFALL.md
+      - name: Commit hop
+        run: |
           git config user.name "continuity-engine"
-          git config user.email "continuity@local"
-          git add docs/LEDGER-STAMP.md
-          git diff --cached --quiet || git commit -m "heartbeat: team-enhance stamp (137451921129154222)"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/WATERFALL.md
+          git diff --cached --quiet || git commit -m "chore(cascade): hop stamp toward The-Hive"
           git push || true
-      - name: waterfall-dispatch
-        if: ${{ secrets.CASCADE_TOKEN != '' }}
-        env:
-          GH_TOKEN: ${{ secrets.CASCADE_TOKEN }}
-        run: |
-          for REPO in The-Hive ENCLAVE-ADAM-REUNITED continuity-ledger-cycle nexus-repo-sync gaia-visualizer; do
-            curl -sS -X POST \
-              -H "Accept: application/vnd.github+json" \
-              -H "Authorization: Bearer $GH_TOKEN" \
-              "https://api.github.com/repos/machackabook/${REPO}/dispatches" \
-              -d '{"event_type":"continuity-cascade"}' || true
-          done
