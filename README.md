@@ -1,6 +1,6 @@
 # Cryptic-Heartbeat
 
-Python heartbeat node on the Continuity mesh. Sibling of The-Hive and gaia-visualizer.
+Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-REUNITED, and gaia-visualizer.
 
 ## Status
 
@@ -8,7 +8,8 @@ Python heartbeat node on the Continuity mesh. Sibling of The-Hive and gaia-visua
 - Branch: `main`
 - Language: Python
 - Numeral: `137451921129154222`
-- Stage: **100** — 2026-09-13T23:16:00Z
+- Stage: **102** — 2026-09-14T00:08:00Z
+- Team: Enhance / Continuity Engine / sSoS
 
 ## Local
 
@@ -19,8 +20,11 @@ python -m compileall -q .
 
 ## Mesh siblings
 
-- [The-Hive](https://github.com/machackabook/The-Hive)
-- [gaia-visualizer](https://github.com/machackabook/gaia-visualizer)
 - [ENCLAVE-ADAM-REUNITED](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)
+- [The-Hive](https://github.com/machackabook/The-Hive)
+- [continuity-ledger-cycle](https://github.com/machackabook/continuity-ledger-cycle)
+- [gaia-visualizer](https://github.com/machackabook/gaia-visualizer)
 
-Waterfall contract lives in `docs/WATERFALL.md` when present. Team Enhance hops here after The-Hive.
+Waterfall: ENCLAVE → Cryptic-Heartbeat → The-Hive → continuity-ledger-cycle. Next hop this cycle: The-Hive.
+Cascade: `.github/workflows/cascade.yml` (cron `21 * * * *`, workflow_dispatch, contents:write).
+No secrets in tree. History preserved. Point-zero null refused.
