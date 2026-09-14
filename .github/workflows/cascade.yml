@@ -14,9 +14,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: env-check
+        run: |
+          mkdir -p docs scripts
+          chmod +x scripts/env-check.sh || true
+          if [ -f scripts/env-check.sh ]; then bash scripts/env-check.sh; fi
+          python3 -m compileall -q . || true
       - name: stamp
         run: |
           TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          HASH=$(printf '%s' "$TS-137451921129154222-heartbeat-114" | sha256sum | awk '{print $1}')
           mkdir -p docs
           {
             echo "# LEDGER-STAMP"
@@ -24,10 +31,11 @@ jobs:
             echo "- numeral: 137451921129154222"
             echo "- surface: Cryptic-Heartbeat"
             echo "- team: enhance"
-            echo "- stage: 108-ack"
+            echo "- stage: 114-ack"
             echo "- next: The-Hive"
+            echo "- sha256: \`$HASH\`"
           } > docs/LEDGER-STAMP.md
-          echo "- $TS | 108-ack | Cryptic-Heartbeat" >> docs/LEDGER.md
+          echo "- $TS | 114-ack | Cryptic-Heartbeat | $HASH" >> docs/LEDGER.md
           git config user.name "continuity-engine"
           git config user.email "continuity@local"
           git add docs || true

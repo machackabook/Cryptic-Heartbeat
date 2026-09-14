@@ -1,6 +1,6 @@
 # Cryptic-Heartbeat
 
-Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-REUNITED, and continuity-ledger-cycle.
+Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-REUNITED, gaia-visualizer, and continuity-ledger-cycle.
 
 ## Status
 
@@ -8,10 +8,12 @@ Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-
 - Branch: `main`
 - Language: Python
 - Numeral: `137451921129154222`
-- Stage: **108** — 2026-09-14T09:11Z
+- Stage: **114** — 2026-09-14T17:11Z
 - Team: Enhance / Continuity Engine / sSoS Operating
-- Upstream: ENCLAVE-ADAM-REUNITED
+- Upstream: ENCLAVE-ADAM-REUNITED (stage 113 already stamped this hour)
 - Next hop: The-Hive
+- Cascade: `.github/workflows/cascade.yml` (cron :27, dispatch, repository_dispatch)
+- Ledger: `docs/LEDGER-STAMP.md` (append-only; no secrets in tree)
 
 ## Local
 
@@ -20,6 +22,16 @@ bash scripts/env-check.sh
 python -m compileall -q .
 ```
 
+Fails closed on empty SHA or missing README. Point-zero null refused.
+
+## Waterfall (one repo per hour)
+
+1. ENCLAVE-ADAM-REUNITED
+2. Cryptic-Heartbeat (stamped this hour — stage 114)
+3. The-Hive
+4. continuity-ledger-cycle
+5. other `user:machackabook` repos updated recently
+
 ## Mesh siblings
 
 - [ENCLAVE-ADAM-REUNITED](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)
@@ -27,6 +39,4 @@ python -m compileall -q .
 - [continuity-ledger-cycle](https://github.com/machackabook/continuity-ledger-cycle)
 - [gaia-visualizer](https://github.com/machackabook/gaia-visualizer)
 
-Waterfall: ENCLAVE-ADAM-REUNITED → Cryptic-Heartbeat → The-Hive → continuity-ledger-cycle.
-Cascade listens for `repository_dispatch: continuity-cascade`.
-No secrets in tree. History preserved. Point-zero null refused.
+Preserve. Enhance. Synthesize. Source code is the only trusted neighbor.
