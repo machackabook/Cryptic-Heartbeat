@@ -1,25 +1,29 @@
 name: continuity-cascade
 on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+  repository_dispatch:
+    types: [continuity-cascade, pull-then-push]
   workflow_dispatch:
   schedule:
-    - cron: "23 * * * *"
+    - cron: "29 * * * *"
+permissions:
+  contents: write
 jobs:
-  env-check:
+  stamp:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: env and structure
+      - name: stamp
         run: |
-          echo "numeral=137451921129154222"
-          echo "repo=${{ github.repository }}"
-          echo "sha=${{ github.sha }}"
-          ls -la
-          test -f README.md
-          test -f SECURITY.md
-      - name: cascade note
-        run: |
-          echo "waterfall: Cryptic-Heartbeat <-> The-Hive <-> ENCLAVE-ADAM-REUNITED"
+          TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          {
+            echo "# CONTINUITY_STAMP"
+            echo "- utc: $TS"
+            echo "- numeral: 137451921129154222"
+            echo "- surface: Cryptic-Heartbeat"
+            echo "- from: nexus-repo-sync waterfall"
+          } > CONTINUITY_STAMP.md
+          git config user.name "continuity-engine"
+          git config user.email "continuity@local"
+          git add CONTINUITY_STAMP.md
+          git diff --cached --quiet || git commit -m "heartbeat stamp $TS"
+          git push || true
