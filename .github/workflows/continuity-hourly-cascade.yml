@@ -1,0 +1,26 @@
+name: Continuity Hourly Cascade
+on:
+  schedule:
+    - cron: "29 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [continuity-cascade, mesh-sync]
+permissions:
+  contents: write
+jobs:
+  stamp-and-cascade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Stamp pulse
+        run: |
+          mkdir -p docs/cascade
+          TS=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          echo "{\"ts\":\"$TS\",\"event\":\"${{ github.event_name }}\",\"sha\":\"${{ github.sha }}\",\"numeral\":\"137451921129154222\",\"node\":\"Cryptic-Heartbeat\"}" >> docs/cascade/hourly.jsonl
+      - name: Commit stamp if dirty
+        run: |
+          git config user.name "continuity-engine"
+          git config user.email "continuity@users.noreply.github.com"
+          git add docs/cascade/hourly.jsonl || true
+          git diff --cached --quiet || git commit -m "ledger: hourly pulse ${{ github.run_id }}"
+          git push || true
