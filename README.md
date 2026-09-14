@@ -1,6 +1,6 @@
 # Cryptic-Heartbeat
 
-Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-REUNITED, and gaia-visualizer.
+Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-REUNITED, and continuity-ledger-cycle.
 
 ## Status
 
@@ -8,9 +8,9 @@ Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-
 - Branch: `main`
 - Language: Python
 - Numeral: `137451921129154222`
-- Stage: **107** — 2026-09-14T04:14Z
+- Stage: **108** — 2026-09-14T09:11Z
 - Team: Enhance / Continuity Engine / sSoS Operating
-- Upstream: ENCLAVE-ADAM-REUNITED stage 107
+- Upstream: ENCLAVE-ADAM-REUNITED
 - Next hop: The-Hive
 
 ## Local
@@ -27,6 +27,6 @@ python -m compileall -q .
 - [continuity-ledger-cycle](https://github.com/machackabook/continuity-ledger-cycle)
 - [gaia-visualizer](https://github.com/machackabook/gaia-visualizer)
 
-Waterfall: ENCLAVE → Cryptic-Heartbeat → The-Hive → gaia-visualizer.
+Waterfall: ENCLAVE-ADAM-REUNITED → Cryptic-Heartbeat → The-Hive → continuity-ledger-cycle.
 Cascade listens for `repository_dispatch: continuity-cascade`.
 No secrets in tree. History preserved. Point-zero null refused.

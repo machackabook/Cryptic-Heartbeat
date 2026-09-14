@@ -24,10 +24,10 @@ jobs:
             echo "- numeral: 137451921129154222"
             echo "- surface: Cryptic-Heartbeat"
             echo "- team: enhance"
-            echo "- stage: 106-ack"
+            echo "- stage: 108-ack"
             echo "- next: The-Hive"
           } > docs/LEDGER-STAMP.md
-          echo "- $TS | 106-ack | Cryptic-Heartbeat" >> docs/LEDGER.md
+          echo "- $TS | 108-ack | Cryptic-Heartbeat" >> docs/LEDGER.md
           git config user.name "continuity-engine"
           git config user.email "continuity@local"
           git add docs || true
