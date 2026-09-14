@@ -1,23 +1,35 @@
-name: cascade
+name: cascade-hourly
 on:
   schedule:
-    - cron: "21 * * * *"
+    - cron: "27 * * * *"
   workflow_dispatch:
+  push:
+    branches: [main]
+  repository_dispatch:
+    types: [continuity-cascade, pull-then-push]
 permissions:
   contents: write
 jobs:
-  hop:
+  enhance:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Record cascade hop
+      - name: stamp
         run: |
+          TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           mkdir -p docs
-          printf '# Waterfall\n\nENCLAVE-ADAM-REUNITED -> Cryptic-Heartbeat -> The-Hive -> continuity-ledger-cycle\nThis hop: Cryptic-Heartbeat STAGE 102\nUTC %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > docs/WATERFALL.md
-      - name: Commit hop
-        run: |
+          {
+            echo "# LEDGER-STAMP"
+            echo "- utc: $TS"
+            echo "- numeral: 137451921129154222"
+            echo "- surface: Cryptic-Heartbeat"
+            echo "- team: enhance"
+            echo "- stage: 106-ack"
+            echo "- next: The-Hive"
+          } > docs/LEDGER-STAMP.md
+          echo "- $TS | 106-ack | Cryptic-Heartbeat" >> docs/LEDGER.md
           git config user.name "continuity-engine"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/WATERFALL.md
-          git diff --cached --quiet || git commit -m "chore(cascade): hop stamp toward The-Hive"
+          git config user.email "continuity@local"
+          git add docs || true
+          git diff --cached --quiet || git commit -m "heartbeat: team-enhance stamp (137451921129154222)"
           git push || true

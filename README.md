@@ -8,9 +8,10 @@ Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-
 - Branch: `main`
 - Language: Python
 - Numeral: `137451921129154222`
-- Stage: **104-ack** — 2026-09-13T21:16 CDT
-- Team: Enhance / Continuity Engine / sSoS
-- Upstream: ENCLAVE-ADAM-REUNITED stage 104
+- Stage: **106-ack** — 2026-09-13T22:22 CDT
+- Team: Enhance / Continuity Engine / sSoS Operating
+- Upstream: ENCLAVE-ADAM-REUNITED stage 106
+- Next hop: The-Hive
 
 ## Local
 
@@ -27,5 +28,5 @@ python -m compileall -q .
 - [gaia-visualizer](https://github.com/machackabook/gaia-visualizer)
 
 Waterfall: ENCLAVE → Cryptic-Heartbeat → The-Hive → gaia-visualizer.
-Cascade: `.github/workflows/cascade.yml`.
+Cascade listens for `repository_dispatch: continuity-cascade`.
 No secrets in tree. History preserved. Point-zero null refused.
