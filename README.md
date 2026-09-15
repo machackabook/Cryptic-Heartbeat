@@ -8,12 +8,13 @@ Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-
 - Branch: `main`
 - Language: Python
 - Numeral: `137451921129154222`
-- Stage: **117** — 2026-09-14T21:10Z
+- Stage: **120** — 2026-09-15T02:00Z
 - Team: Enhance / Continuity Engine / sSoS Operating
 - Upstream: ENCLAVE-ADAM-REUNITED
 - Next hop: The-Hive
-- Cascade: `.github/workflows/cascade.yml` (cron, dispatch, repository_dispatch)
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-117.md` (append-only; no secrets in tree)
+- Cascade: `.github/workflows/cascade.yml` (cron + dispatch; sibling hops require `CASCADE_PAT` secret — not present, not invented)
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-120.md` (append-only; no secrets in tree)
+- Ethereal: Google Drive Continuity-Ethereal-Repos is the cloud twin; GitHub remains the versioned singularity.
 
 ## Local
 
@@ -27,11 +28,13 @@ Fails closed on empty SHA or missing README. Point-zero null refused.
 ## Waterfall (one repo per hour)
 
 1. ENCLAVE-ADAM-REUNITED
-2. Cryptic-Heartbeat (stamped this hour — stage 117)
+2. Cryptic-Heartbeat (stamped this hour — stage 120)
 3. The-Hive
 4. gaia-visualizer
 5. continuity-ledger-cycle
 6. other `user:machackabook` repos updated recently
+
+A pull on `main` should leave a ledger stamp. Cross-repo push waterfall stays closed until the operator injects `CASCADE_PAT`.
 
 ## Mesh siblings
 
