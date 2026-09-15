@@ -1,0 +1,24 @@
+name: Continuity Hourly Enhance
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [continuity-waterfall, pull-cascade]
+permissions:
+  contents: read
+jobs:
+  enhance:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Env check
+        run: |
+          echo "numeral=137451921129154222"
+          echo "repo=${GITHUB_REPOSITORY}"
+          echo "event=${GITHUB_EVENT_NAME}"
+          test -d .github
+          test -f README.md
+          date -u +%Y-%m-%dT%H:%M:%SZ
+      - name: Catalog tree
+        run: find . -maxdepth 3 -not -path './.git*' | sort | head -n 80
