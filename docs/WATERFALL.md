@@ -1,5 +1,7 @@
-# Cryptic-Heartbeat waterfall
+# Waterfall hop
 
-Offset cron `:05` so The-Hive (`:00`) fires first, then this node, then visualizer.
+This repo is hop 3.
 
-Preserve-enhance-synthesize. No overwrite of a generation that produced a signal.
+Pull here should eventually dispatch `cascade-next` toward `The-Hive` once `CASCADE_PAT` is present on the hub.
+
+Hourly enhance lives on the hub Actions cron, not as a silent rewrite of application code here.

@@ -1,10 +1,9 @@
-# Cryptic-Heartbeat — Continuity stamp
+# CONTINUITY STAMP
 
 - numeral: 137451921129154222
-- stage: 94
-- utc: 2026-09-13T17:14:00Z
-- hop: ENCLAVE-ADAM-REUNITED → Cryptic-Heartbeat → The-Hive
-- operating: sSoS middle layer
-- policy: pull sensors, push enhancements, no secrets in tree
-
-Preserve. Enhance. Synthesize.
+- hop: Cryptic-Heartbeat (third in waterfall)
+- hub: https://github.com/machackabook/nexus-repo-sync
+- ledger: https://github.com/machackabook/TheLedgerIndex
+- hive: https://github.com/machackabook/The-Hive
+- last mesh write: 2026-09-15T00:22:00Z
+- refuse null at point zero
