@@ -1,14 +1,8 @@
 # LEDGER-STAMP
-- utc: 2026-09-15T19:17:00Z
-- numeral: 137451921129154222
-- surface: Cryptic-Heartbeat
-- team: enhance / Continuity Engine / sSoS Operating
-- stage: 129
-- version: v1.3.29-enhance
-- upstream: ENCLAVE-ADAM-REUNITED (stage 128 @ cb206364b524fd36270cdf74cc5b3e4cb9d02ef8)
-- next: The-Hive
-- waterfall: ENCLAVE-ADAM-REUNITED → Cryptic-Heartbeat → The-Hive → continuity-ledger-cycle
-- posture: preserve-enhance-synthesize; point-zero null refused; secrets not committed; history preserved
-- cascade: .github/workflows/cascade.yml healthy (cron 27 * * * *; dispatch continuity-cascade; no invented tokens; not rewritten this hop)
-- sha256-seed: 2026-09-15T19:17:00Z-137451921129154222-heartbeat-129
-- prior-stamp: 2026-09-15T16:20:00Z stage 126
+
+Current stage: **131** (2026-09-15T21:13Z)
+See `docs/LEDGER-STAMP-131.md`.
+Numeral `137451921129154222`.
+Surface: Cryptic-Heartbeat
+Team: Enhance / Continuity Engine / sSoS Operating
+Next hop: The-Hive
