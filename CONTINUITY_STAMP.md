@@ -1,9 +1,8 @@
-# CONTINUITY STAMP
+# Continuity stamp
 
-- numeral: 137451921129154222
-- hop: Cryptic-Heartbeat (third in waterfall)
-- hub: https://github.com/machackabook/nexus-repo-sync
-- ledger: https://github.com/machackabook/TheLedgerIndex
-- hive: https://github.com/machackabook/The-Hive
-- last mesh write: 2026-09-15T00:22:00Z
-- refuse null at point zero
+Numeral: 137451921129154222
+Hop: ENCLAVE-ADAM-REUNITED stage 119 → Cryptic-Heartbeat
+Time: 2026-09-15T01:21Z
+Hub commit: 8ffaa546722e63b7ae7d17561e74b2fec1f59b2a
+Next: The-Hive
+CASCADE_PAT: absent (catalogued)
