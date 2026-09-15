@@ -4,17 +4,18 @@ Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-
 
 ## Status
 
-- Owner: `machackabook`
+- Owner: `machackabook` (id 219579651)
 - Branch: `main`
 - Language: Python
 - Numeral: `137451921129154222`
-- Stage: **127** — 2026-09-15T18:05Z
+- Stage: **129** — 2026-09-15T19:17Z
 - Team: Enhance / Continuity Engine / sSoS Operating
-- Upstream: ENCLAVE-ADAM-REUNITED (stage 127)
-- Next hop: gaia-visualizer
+- Upstream: ENCLAVE-ADAM-REUNITED (stage 128)
+- Next hop: The-Hive
 - Cascade: `.github/workflows/cascade.yml` (cron `27 * * * *` + dispatch; sibling hops require operator-injected token — catalogued, never invented, never committed)
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-127.md`
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-129.md`
 - Ethereal: Google Drive Continuity-Ethereal-Repos is the cloud twin; GitHub remains the versioned singularity.
+- Equalizer: format-only; no history rewrite.
 
 ## Local
 
@@ -27,8 +28,8 @@ Fails closed on empty SHA or missing README. Point-zero null refused.
 
 ## Waterfall (one repo per hour)
 
-1. ENCLAVE-ADAM-REUNITED
-2. Cryptic-Heartbeat (stamped this hop — stage 127)
+1. ENCLAVE-ADAM-REUNITED (prior hour / stage 128)
+2. Cryptic-Heartbeat (stamped this hop — stage 129)
 3. The-Hive
 4. continuity-ledger-cycle
 5. other `user:machackabook` repos updated recently
