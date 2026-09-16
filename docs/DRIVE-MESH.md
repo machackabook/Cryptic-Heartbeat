@@ -1,13 +1,11 @@
-# Drive mesh (ethereal continuum)
+# Drive mesh contract
 
-GitHub is the versioned singularity. Drive is the ethereal twin.
+Ethereal continuum folder id: `1tGBSsEi9a2i_-W6ItvJZJDQ1VtiBKYEQ`
 
-Catalogued folder names (ids stay off-tree unless already public):
+Bidirectional intent:
+- GitHub is the versioned speedway.
+- Drive is the ethereal copy of repo surfaces (README, ledger stamps, env-check).
+- Shared-with-me and My Drive stay catalogued, never silently overwritten.
+- Zip unpack and env-check run locally before any cascade hop.
 
-- CONTINUUM-GITHUB-MESH (Drive ethereal repo house)
-- .github folders present across device sync trees
-- Shared-with-me vs My-computer: bridge is bidirectional *documentation* only until an operator token exists.
-
-Bidirectional sync is **not** a silent overwrite. Enhance writes GitHub first, then a Drive catalog note. Pull does not invent push tokens.
-
-SD-card / Termux developing environment remains the local substrate. Cloud is the continuum, not a replacement for git history.
+This file is a contract, not a credential store. Secrets stay out of git.

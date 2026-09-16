@@ -1,4 +1,4 @@
-# Current stamp
+# Current ledger pointer
 
-Stage **148** — 2026-09-16T21:05Z — Cryptic-Heartbeat
-Numeral 137451921129154222
+Stage 152. See `docs/LEDGER-STAMP-152.md`.
+Numeral 137451921129154222.
