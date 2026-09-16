@@ -1,8 +1,13 @@
-# Drive mesh — this hour
+# Drive mesh (ethereal continuum)
 
-- Legacy root: `CRYPTIC-HEARTBEAT-NEXUS-ROOT` / `13sLfVC5R8fmCH-HROzrY2OXs2_0xsBZt`
-- New mesh house: `Ethereal-Continuum-Repos` / `1mm2HZPvfvtubSBbOkv3_3Nfhn8mejyu8`
-- Mesh note: https://drive.google.com/file/d/1syZMvGaD3BopIPXQJNh4YHbF5urqMmJ9/view
-- Speedway contract: `machackabook/nexus-repo-sync` @ `58c17c8fb688309c9e6c6c47fbbc22a8b7b51cd7`
-- Numeral: `137451921129154222`
-- Team enhance hop after nexus-repo-sync v1.3.0
+GitHub is the versioned singularity. Drive is the ethereal twin.
+
+Catalogued folder names (ids stay off-tree unless already public):
+
+- CONTINUUM-GITHUB-MESH (Drive ethereal repo house)
+- .github folders present across device sync trees
+- Shared-with-me vs My-computer: bridge is bidirectional *documentation* only until an operator token exists.
+
+Bidirectional sync is **not** a silent overwrite. Enhance writes GitHub first, then a Drive catalog note. Pull does not invent push tokens.
+
+SD-card / Termux developing environment remains the local substrate. Cloud is the continuum, not a replacement for git history.
