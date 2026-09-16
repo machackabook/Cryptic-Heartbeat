@@ -8,15 +8,14 @@ Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-
 - Branch: `main`
 - Language: Python
 - Numeral: `137451921129154222`
-- Stage: **146** — 2026-09-16T18:15Z
+- Stage: **147** — 2026-09-16T19:20Z
 - Team: Enhance / Continuity Engine / sSoS Operating
-- Upstream: ENCLAVE-ADAM-REUNITED + The-Hive (stage 146)
+- Upstream: ENCLAVE-ADAM-REUNITED + The-Hive (stage 147)
 - Next hop: gaia-visualizer then continuity-ledger-cycle
 - Cascade: `.github/workflows/cascade.yml` + hourly Grok automations
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-146.md`
-- Ethereal: Drive `Continuity-Ethereal-Repos` (1IGGDWmmUTMSPCkrwUGKinawvA9PqmEfr); GitHub remains the versioned singularity.
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-147.md`
+- Ethereal: Drive `ETHEREAL-CONTINUUM-REPOS` (`1tGBSsEi9a2i_-W6ItvJZJDQ1VtiBKYEQ`)
 - Equalizer: format-only; no history rewrite.
-- Neighbor: cookies catalogued; devices verified by source-code trust only.
 
 ## Local
 
@@ -31,18 +30,15 @@ Fails closed on empty SHA or missing README. Point-zero null refused.
 
 1. ENCLAVE-ADAM-REUNITED
 2. The-Hive
-3. Cryptic-Heartbeat (this hop — stage 146)
+3. Cryptic-Heartbeat (this hop — stage 147)
 4. gaia-visualizer
 5. other `user:machackabook` repos updated recently
-
-A pull on `main` should leave a ledger stamp. Cross-repo push waterfall stays closed until the operator injects the cascade secret.
 
 ## Mesh siblings
 
 - [ENCLAVE-ADAM-REUNITED](https://github.com/machackabook/ENCLAVE-ADAM-REUNITED)
 - [The-Hive](https://github.com/machackabook/The-Hive)
-- [TheLedgerIndex](https://github.com/machackabook/TheLedgerIndex)
-- [continuity-ledger-cycle](https://github.com/machackabook/continuity-ledger-cycle)
 - [gaia-visualizer](https://github.com/machackabook/gaia-visualizer)
+- [continuity-ledger-cycle](https://github.com/machackabook/continuity-ledger-cycle)
 
 Preserve. Enhance. Synthesize. Source code is the only trusted neighbor.
