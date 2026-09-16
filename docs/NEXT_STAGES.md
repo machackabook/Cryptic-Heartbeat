@@ -1,4 +1,4 @@
-# Next stages — Stage 139 (2026-09-16 09:27 CDT)
+# Next stages — Stage 141 (2026-09-16 12:06 CDT)
 
 Session paste hash `beec41f1` reconfirmed (same four-geometry `update(t)`). Living hash `7cd81012`.
 
@@ -17,3 +17,4 @@ Session paste hash `beec41f1` reconfirmed (same four-geometry `update(t)`). Livi
 4. Remaining ledger-sheet sources behind the live HMAC pulse gate.
 5. Promote klein / hopf / figure8 / trefoil into the session switch only after a paste includes those cases.
 6. HeartbeatScan authorization on Hive HTTP mutation + WS.
+7. Public band default `blend` on hamiltoniansingularity.ai (already wired; keep gated until host cutover).
