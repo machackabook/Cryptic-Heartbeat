@@ -1,4 +1,4 @@
-# Next stages — Stage 160 (2026-09-17 16:08 CDT)
+# Next stages — Stage 161 (2026-09-17 17:05 CDT)
 
 Session paste hash `beec41f1` reconfirmed (same four-geometry `update(t)`). Living hash `7cd81012`.
 
@@ -9,7 +9,7 @@ Session paste hash `beec41f1` reconfirmed (same four-geometry `update(t)`). Livi
 - Theta step `(0.01 + idx * 0.002) * gravityPull`.
 - Minor radius `3 + toroidalWeave * 2`.
 
-## Done this stage
+## Done prior
 
 - gaia-visualizer `GPU_AUTO_THRESHOLD = 1024`: InstancedMesh GPU buffers + transform feedback auto-enable when `?nodes=` exceeds 1k.
 
