@@ -1,43 +1,29 @@
-name: cascade-hourly
+name: cascade-enhance
 on:
   schedule:
     - cron: "27 * * * *"
   workflow_dispatch:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
   repository_dispatch:
     types: [continuity-cascade, pull-then-push]
 permissions:
-  contents: write
+  contents: read
 jobs:
-  enhance:
+  lint-docs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: env-check
+      - name: require README and SECURITY
+        run: test -f README.md && test -f SECURITY.md
+      - name: stamp present
+        run: test -f docs/LEDGER-STAMP.md
+      - name: numeral remembered in README
+        run: grep -q 137451921129154222 README.md
+      - name: no obvious secret files in tree
         run: |
-          mkdir -p docs scripts
-          chmod +x scripts/env-check.sh || true
-          if [ -f scripts/env-check.sh ]; then bash scripts/env-check.sh; fi
-          python3 -m compileall -q . || true
-      - name: stamp
-        run: |
-          TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
-          HASH=$(printf '%s' "$TS-137451921129154222-heartbeat-156" | sha256sum | awk '{print $1}')
-          mkdir -p docs
-          {
-            echo "# LEDGER-STAMP"
-            echo "- utc: $TS"
-            echo "- numeral: 137451921129154222"
-            echo "- surface: Cryptic-Heartbeat"
-            echo "- team: enhance"
-            echo "- stage: 156-ack"
-            echo "- next: The-Hive"
-            echo "- sha256: \`$HASH\`"
-          } > docs/LEDGER-STAMP.md
-          echo "- $TS | 156-ack | Cryptic-Heartbeat | $HASH" >> docs/LEDGER.md
-          git config user.name "continuity-engine"
-          git config user.email "continuity@local"
-          git add docs || true
-          git diff --cached --quiet || git commit -m "heartbeat: team-enhance stamp (137451921129154222)"
-          git push || true
+          ! test -f .env
+          ! test -f secrets.yml
+          ! test -f id_rsa
