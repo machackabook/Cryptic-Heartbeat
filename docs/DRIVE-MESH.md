@@ -1,11 +1,11 @@
-# Drive mesh contract
+# Drive mesh
 
-Ethereal continuum folder id: `1tGBSsEi9a2i_-W6ItvJZJDQ1VtiBKYEQ`
+Bidirectional cloud sync is an *operator* action, not a silent overwrite.
 
-Bidirectional intent:
-- GitHub is the versioned speedway.
-- Drive is the ethereal copy of repo surfaces (README, ledger stamps, env-check).
-- Shared-with-me and My Drive stay catalogued, never silently overwritten.
-- Zip unpack and env-check run locally before any cascade hop.
+- GitHub = versioned singularity
+- Google Drive = ethereal continuum (documents, sparse notes, shared-with-me)
+- SD / local downloads = developing environment
 
-This file is a contract, not a credential store. Secrets stay out of git.
+No secrets in Drive-mirrored trees. Unpack zips only after env-check. Folder watchers belong on the device, not as unbounded Actions that rewrite history.
+
+If `ETHEREAL-CONTINUUM-REPOS` exists, treat it as a mirror index, never as origin.
