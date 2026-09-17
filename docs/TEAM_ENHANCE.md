@@ -1,13 +1,21 @@
 # Team Enhance — Cryptic-Heartbeat
 
-Sovereign Operating System layer. Operating sits in the middle.
+Numeral: `137451921129154222`
+Cycle: preserve → enhance → synthesize
+Null at point zero: refused.
 
-- Owner: machackabook
-- Numeral: 137451921129154222
-- Loop: PRESERVE → ENHANCE → SYNTHESIZE
-- Hourly workflow: `.github/workflows/continuity-hourly.yml`
-- Env check: `scripts/env_check.sh`
+## Mesh role
+Heartbeat node. Pull on this repo is intended to wake sibling cascade (The-Hive, ENCLAVE-ADAM-REUNITED, gaia-visualizer).
 
-Waterfall: a pull on this repo should later dispatch `continuity-waterfall` to sibling mesh nodes (The-Hive, ENCLAVE-ADAM-REUNITED, gaia-visualizer) using a scoped PAT stored as `MESH_DISPATCH_TOKEN` — never commit the token.
+## Quality of service
+- Append-only ledger entries live in CONTINUITY_STAMP.md and SINGULARITY_UNITE_STATUS.md
+- SECURITY.md remains the trust boundary; no secrets in trees
+- Scheduled GitHub Action: `.github/workflows/team-enhance.yml`
 
-Google Drive remains the ethereal continuum store; this GitHub surface is the versioned speedway. Bidirectional sync is documented, not a blind secret-copy.
+## Waterfall contract
+When a pull lands on `main`:
+1. lint / syntax sanity (no network mutation of other remotes from CI without explicit token)
+2. stamp generation timestamp
+3. leave a cascade note for Team Enhance / Meta Advance / Equalizer
+
+Copyright: machackabook / Continuity Engine. Distinction over destruction.
