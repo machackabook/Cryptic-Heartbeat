@@ -1,4 +1,4 @@
-# Next stages — Stage 159 (2026-09-17 15:05 CDT)
+# Next stages — Stage 160 (2026-09-17 16:08 CDT)
 
 Session paste hash `beec41f1` reconfirmed (same four-geometry `update(t)`). Living hash `7cd81012`.
 
@@ -9,10 +9,14 @@ Session paste hash `beec41f1` reconfirmed (same four-geometry `update(t)`). Livi
 - Theta step `(0.01 + idx * 0.002) * gravityPull`.
 - Minor radius `3 + toroidalWeave * 2`.
 
+## Done this stage
+
+- gaia-visualizer `GPU_AUTO_THRESHOLD = 1024`: InstancedMesh GPU buffers + transform feedback auto-enable when `?nodes=` exceeds 1k.
+
 ## Next work
 
 1. Panel emitters: remaining Quine / NexusStudio editors → `emitGeometry` / `emitWeaveChange` / `emitPulse` / `emitLedger`.
-2. InstancedMesh + GPU attributes for >1k nodes (gaia-visualizer).
+2. Tighter instanceOffset shader path at 4k–16k without CPU `setMatrixAt` writes.
 3. Drive engram persist from `/api/gaia/engram` into `CRYPTIC-HEARTBEAT-NEXUS-ROOT`.
 4. Remaining ledger-sheet sources behind the live HMAC pulse gate.
 5. Promote klein / hopf / figure8 / trefoil into the session switch only after a paste includes those cases.
