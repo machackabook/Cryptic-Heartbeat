@@ -11,13 +11,13 @@ Operating sits in the middle. Team Enhance hops one repo per hour. Equalizer for
 - Language: Python
 - Numeral: `137451921129154222`
 - Team: Enhance / Continuity Engine / sSoS Operating
-- Stage: **199** — 2026-09-19T20:14Z (2026-09-19 15:14 CDT)
-- Compounding tier: **T3 / 76%**
-- Prior mesh: ENCLAVE-ADAM-REUNITED 196 @ 19:17Z; this surface last stamped 196 @ 16:03Z (README was stale vs tree hop 198)
-- This hop: README quality refresh; append-only ledger stamp 199; cascade.yml left intact and healthy; no extra hourly YAML; no secrets written
+- Stage: **200** — 2026-09-19T23:20Z (2026-09-19 18:20 CDT)
+- Compounding tier: **T3 / 78%**
+- Prior mesh: ENCLAVE-ADAM-REUNITED 197 @ 22:08Z; this surface last stamped 199 @ 20:14Z
+- This hop: README quality refresh; append-only ledger stamp 200; cascade.yml left intact and healthy; no extra hourly YAML; no secrets written
 - Next hour: The-Hive
 - Cascade: keep existing `.github/workflows/cascade.yml` healthy. Do not clone more hourly YAML.
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-199.md` + `docs/HOP-199.md`
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-200.md` + `docs/HOP-200.md`
 - Security: no secrets in tree; operator tokens stay in GitHub Secrets (`CASCADE_TOKEN` catalogued, never committed)
 - Mesh: GitHub is the versioned singularity. Ethereal continuum is a mirror. Do not spawn duplicate continuum folders.
 - Equalizer: format-only; no history rewrite.
@@ -36,7 +36,7 @@ Each hop compounds prior quality. Tiers climb toward 100% perfect. Fail closed o
 | T5 | 95–99% | Near-perfect; only unknown sought |
 | T6 | 100% | Perfect — refused as static; always seek next unknown |
 
-Current score for this surface: **76% (T3)**. Next hop compounds +2–5% when checks pass.
+Current score for this surface: **78% (T3)**. Next hop compounds +2–5% when checks pass.
 
 ## Speedway
 
@@ -60,8 +60,8 @@ Zips in Downloads / public-download / private-download / omdirectorytrew are wat
 
 ## Waterfall (one repo per enhance hop)
 
-1. ENCLAVE-ADAM-REUNITED (stage 196 @ 19:17Z)
-2. Cryptic-Heartbeat (this hop — stage 199)
+1. ENCLAVE-ADAM-REUNITED (stage 197 @ 22:08Z)
+2. Cryptic-Heartbeat (this hop — stage 200)
 3. The-Hive  ← next hour
 4. continuity-ledger-cycle
 5. gaia-visualizer / nexus-repo-sync / other recently updated surfaces
