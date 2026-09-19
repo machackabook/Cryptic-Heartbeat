@@ -1,4 +1,4 @@
-# Next stages — Stage 178 (2026-09-18 19:13 CDT)
+# Next stages — Stage 191 (2026-09-19 11:20 CDT)
 
 Session paste hash `beec41f1` reconfirmed (same four-geometry `update(t)`). Living hash `7cd81012`.
 
@@ -12,7 +12,7 @@ Session paste hash `beec41f1` reconfirmed (same four-geometry `update(t)`). Livi
 ## Done prior
 
 - gaia-visualizer `GPU_AUTO_THRESHOLD = 1024`: InstancedMesh GPU buffers + transform feedback auto-enable when `?nodes=` exceeds 1k.
-- Session pin held through stages 161–178.
+- Session pin held through stages 161–191.
 
 ## Next work
 
