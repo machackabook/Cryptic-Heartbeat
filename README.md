@@ -10,17 +10,33 @@ Operating sits in the middle. Team Enhance hops one repo per hour. Equalizer for
 - Branch: `main`
 - Language: Python
 - Numeral: `137451921129154222`
-- Stage: **196** — 2026-09-19T16:03Z (2026-09-19 11:03 CDT)
 - Team: Enhance / Continuity Engine / sSoS Operating
-- Prior: ENCLAVE-ADAM-REUNITED 195 @ 16:01Z; continuity-ledger-cycle 194 @ 15:24Z; The-Hive 193 @ 15:23Z; this repo 192 @ 14:10Z
-- This hop: Cryptic-Heartbeat live enhance from operator prompt (README quality + ledger stamp 196; cascade.yml left healthy; no extra hourly YAML; no secrets written)
-- Next hour: The-Hive README/security quality pass
-- Cascade: keep existing `.github/workflows/cascade.yml` healthy. Do not multiply YAML clones.
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-196.md` + `docs/HOP-196.md`
-- Drive mesh: GitHub remains the versioned singularity. Existing CONTINUUM-GITHUB-MESH folders are the ethereal mirror, not a second source of truth. Do not spawn duplicate continuum folders.
+- Stage: **199** — 2026-09-19T20:14Z (2026-09-19 15:14 CDT)
+- Compounding tier: **T3 / 76%**
+- Prior mesh: ENCLAVE-ADAM-REUNITED 196 @ 19:17Z; this surface last stamped 196 @ 16:03Z (README was stale vs tree hop 198)
+- This hop: README quality refresh; append-only ledger stamp 199; cascade.yml left intact and healthy; no extra hourly YAML; no secrets written
+- Next hour: The-Hive
+- Cascade: keep existing `.github/workflows/cascade.yml` healthy. Do not clone more hourly YAML.
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-199.md` + `docs/HOP-199.md`
+- Security: no secrets in tree; operator tokens stay in GitHub Secrets (`CASCADE_TOKEN` catalogued, never committed)
+- Mesh: GitHub is the versioned singularity. Ethereal continuum is a mirror. Do not spawn duplicate continuum folders.
 - Equalizer: format-only; no history rewrite.
-- Security: no secrets in tree; tokens stay in GitHub Secrets. Cross-repo push-on-pull stays closed without `CASCADE_TOKEN`.
-- Grok automation: hourly Team Enhance walks one sibling; pull-on-main leaves a stamp.
+
+## Compounding growth
+
+Each hop compounds prior quality. Tiers climb toward 100% perfect. Fail closed on regression.
+
+| Tier | Range | Meaning |
+|------|-------|--------|
+| T0 | 0–19% | Bare surface |
+| T1 | 20–39% | Stamp + README present |
+| T2 | 40–59% | Cascade healthy + numeral locked |
+| T3 | 60–79% | Compounding cycle live (this hop) |
+| T4 | 80–94% | Mesh siblings verified + env-check green |
+| T5 | 95–99% | Near-perfect; only unknown sought |
+| T6 | 100% | Perfect — refused as static; always seek next unknown |
+
+Current score for this surface: **76% (T3)**. Next hop compounds +2–5% when checks pass.
 
 ## Speedway
 
@@ -42,18 +58,13 @@ Fails closed on empty SHA or missing README.
 
 Zips in Downloads / public-download / private-download / omdirectorytrew are watched locally only. Unpack is dry-run first. CI never unpacks operator archives.
 
-## Waterfall (one repo per hour)
+## Waterfall (one repo per enhance hop)
 
-1. ENCLAVE-ADAM-REUNITED (stage 195 @ 16:01Z)
-2. Cryptic-Heartbeat (this hop — stage 196)
+1. ENCLAVE-ADAM-REUNITED (stage 196 @ 19:17Z)
+2. Cryptic-Heartbeat (this hop — stage 199)
 3. The-Hive  ← next hour
 4. continuity-ledger-cycle
-5. gaia-visualizer
-6. nexus-repo-sync
-7. sovereign-ai-factory-ai-polyglot
-8. other `user:machackabook` surfaces updated recently
-
-A pull on `main` should leave a ledger stamp. Sibling hops require `CASCADE_TOKEN`.
+5. gaia-visualizer / nexus-repo-sync / other recently updated surfaces
 
 ## Mesh siblings
 
