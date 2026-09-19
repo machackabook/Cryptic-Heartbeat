@@ -1,6 +1,6 @@
 # Cryptic-Heartbeat
 
-Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-REUNITED, gaia-visualizer, TheLedgerIndex, and continuity-ledger-cycle.
+Python heartbeat node on the Continuity mesh. Sibling of The-Hive, ENCLAVE-ADAM-REUNITED, gaia-visualizer, TheLedgerIndex, nexus-repo-sync, and continuity-ledger-cycle.
 
 Operating sits in the middle. Team Enhance hops one repo per hour. Equalizer formats only. No history rewrite. Point-zero null refused.
 
@@ -10,16 +10,17 @@ Operating sits in the middle. Team Enhance hops one repo per hour. Equalizer for
 - Branch: `main`
 - Language: Python
 - Numeral: `137451921129154222`
-- Stage: **185** — 2026-09-19T09:13Z (2026-09-19 04:13 CDT)
+- Stage: **192** — 2026-09-19T14:10Z (2026-09-19 09:10 CDT)
 - Team: Enhance / Continuity Engine / sSoS Operating
-- Prior: ENCLAVE-ADAM-REUNITED pushed 08:06Z; this repo stage 184 @ 02:04Z
-- This hop: Cryptic-Heartbeat live enhance from operator prompt (README quality + ledger stamp; cascade.yml left healthy; no extra hourly YAML)
-- Next hop: The-Hive then continuity-ledger-cycle then other `user:machackabook` surfaces
+- Prior: ENCLAVE-ADAM-REUNITED stage 191 @ 13:06Z; nexus-repo-sync 190; continuity-ledger-cycle 190; The-Hive 186; this repo 185 @ 09:13Z
+- This hop: Cryptic-Heartbeat live enhance from operator prompt (README quality + ledger stamp 192; cascade.yml left healthy; no extra hourly YAML; no secrets written)
+- Next hour: The-Hive README/security quality pass
 - Cascade: keep existing `.github/workflows/cascade.yml` healthy. Do not multiply YAML clones.
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-185.md` + `docs/HOP-185.md`
-- Drive mesh: GitHub remains the versioned singularity. Existing ethereal continuum folder is the mirror, not a second source of truth. Do not spawn duplicate continuum folders.
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/LEDGER-STAMP-192.md` + `docs/HOP-192.md`
+- Drive mesh: GitHub remains the versioned singularity. Existing CONTINUUM-GITHUB-MESH folders are the ethereal mirror, not a second source of truth. Do not spawn duplicate continuum folders.
 - Equalizer: format-only; no history rewrite.
 - Security: no secrets in tree; tokens stay in GitHub Secrets. Cross-repo push-on-pull stays closed without `CASCADE_TOKEN`.
+- Grok automation: hourly Team Enhance walks one sibling; pull-on-main leaves a stamp.
 
 ## Speedway
 
@@ -39,13 +40,18 @@ python -m compileall -q .
 
 Fails closed on empty SHA or missing README.
 
+Zips in Downloads / public-download / private-download / omdirectorytrew are watched locally only. Unpack is dry-run first. CI never unpacks operator archives.
+
 ## Waterfall (one repo per hour)
 
-1. ENCLAVE-ADAM-REUNITED (prior hop)
-2. Cryptic-Heartbeat (this hop — stage 185)
-3. The-Hive
+1. ENCLAVE-ADAM-REUNITED (stage 191)
+2. Cryptic-Heartbeat (this hop — stage 192)
+3. The-Hive  ← next hour
 4. continuity-ledger-cycle
-5. other `user:machackabook` repos updated recently
+5. gaia-visualizer
+6. nexus-repo-sync
+7. sovereign-ai-factory-ai-polyglot
+8. other `user:machackabook` surfaces updated recently
 
 A pull on `main` should leave a ledger stamp. Sibling hops require `CASCADE_TOKEN`.
 
@@ -56,5 +62,6 @@ A pull on `main` should leave a ledger stamp. Sibling hops require `CASCADE_TOKE
 - [gaia-visualizer](https://github.com/machackabook/gaia-visualizer)
 - [continuity-ledger-cycle](https://github.com/machackabook/continuity-ledger-cycle)
 - [nexus-repo-sync](https://github.com/machackabook/nexus-repo-sync)
+- [sovereign-ai-factory-ai-polyglot](https://github.com/machackabook/sovereign-ai-factory-ai-polyglot)
 
 Preserve. Enhance. Synthesize. Source code is the only trusted neighbor.
