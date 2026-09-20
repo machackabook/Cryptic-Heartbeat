@@ -17,9 +17,9 @@
 - Positions lerp at `lerp` (default `0.05`) per frame; never snap. Target vector is reused in the living source.
 - `blend` mixes hamiltonian ↔ klein when `geometry === "blend"`.
 - Chat kernel `update(t)` remains the reference for torus / infinity / hamiltonian / triangular.
-- Stage-191: live chat (2026-09-19 11:20 CDT) reconfirmed session hash `beec41f1`. Living hash `7cd81012`. Klein / hopf / figure8 / trefoil not in session switch. CPU evaluate covers those extras (GPU ids 12 / 13 / 8 / 7). Visualizer auto GPU/TF at `nodes > 1024`.
+- Stage-203: live chat (2026-09-19 21:12 CDT) reconfirmed session hash `beec41f1`. Living hash `7cd81012`. Klein / hopf / figure8 / trefoil not in session switch. CPU evaluate covers those extras (GPU ids 12 / 13 / 8 / 7). Visualizer auto GPU/TF at `nodes > 1024`.
 
-**Next** — see `docs/NEXT_STAGES.md`.
+**Next** — keep session pin; wire ledger pulse (13), Drive engrams (14), public band (16), remaining panels (19), instanceOffset at 4k–16k (51-impl), HeartbeatScan (4-gov). Promote extras only after they appear in a chat paste.
 
 Events on the visualizer window:
 
