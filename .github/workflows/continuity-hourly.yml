@@ -1,24 +1,24 @@
-name: Continuity Hourly Enhance
+name: continuity-hourly
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "0 * * * *"
   workflow_dispatch:
-  repository_dispatch:
-    types: [continuity-waterfall, pull-cascade]
 permissions:
-  contents: read
+  contents: write
 jobs:
-  enhance:
+  stamp:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Env check
+      - name: append immutable hourly stamp
         run: |
-          echo "numeral=137451921129154222"
-          echo "repo=${GITHUB_REPOSITORY}"
-          echo "event=${GITHUB_EVENT_NAME}"
-          test -d .github
-          test -f README.md
-          date -u +%Y-%m-%dT%H:%M:%SZ
-      - name: Catalog tree
-        run: find . -maxdepth 3 -not -path './.git*' | sort | head -n 80
+          mkdir -p ledger
+          TS=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          echo "- $TS Cryptic-Heartbeat hourly stamp numeral=137451921129154222" >> ledger/hourly-stamp.md
+      - name: commit if dirty
+        run: |
+          git config user.name "team-enhance"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ledger/hourly-stamp.md
+          git diff --cached --quiet || git commit -m "ledger: hourly continuity stamp"
+          git push
