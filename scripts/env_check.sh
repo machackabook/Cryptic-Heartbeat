@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
+# Continuity env check — no secrets printed.
 set -euo pipefail
-echo "[sSoS] env check $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 echo "numeral=137451921129154222"
-command -v git >/dev/null && git --version || echo "git missing"
-command -v python3 >/dev/null && python3 --version || echo "python3 missing"
-test -d .git && echo "git-dir=ok" || echo "git-dir=absent"
-echo "[sSoS] env check complete — catalog only, no trust of foreign devices"
+echo "repo=${GITHUB_REPOSITORY:-local}"
+echo "ref=${GITHUB_REF:-unset}"
+command -v git >/dev/null && git rev-parse --short HEAD || true
+test -d ledger && echo "ledger=ok" || echo "ledger=missing"
+exit 0
