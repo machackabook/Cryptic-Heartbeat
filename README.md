@@ -11,13 +11,13 @@ Operating sits in the middle. Team Enhance hops one repo per hour. Equalizer for
 - Language: Python
 - Numeral: `137451921129154222`
 - Team: Enhance / Continuity Engine / sSoS Operating
-- Stage: **220** — 2026-09-21T18:14Z (2026-09-21 13:14 CDT)
-- Compounding tier: **T4 / 94%**
-- Prior mesh: ENCLAVE-ADAM-REUNITED hop 219 @ 17:26Z; this surface previously stamped 217 @ 13:47Z
-- This hop: README compound after ENCLAVE wrap; append-only ledger stamp 220; cascade.yml left intact and healthy; no extra hourly YAML; no secrets written
+- Stage: **232** — 2026-09-21T22:21Z (2026-09-21 17:21 CDT)
+- Compounding tier: **T4 / 95%**
+- Prior mesh: ENCLAVE-ADAM-REUNITED hop 219 @ 17:26Z; this surface README last 220 @ 18:14Z; HOP-231 @ 20:04Z; The-Hive / gaia-visualizer pulsed ~22:16Z
+- This hop: README compound + append-only ledger stamp 232; cascade.yml left intact and healthy; no extra hourly YAML; no secrets written
 - Next hour: The-Hive
 - Cascade: keep existing `.github/workflows/cascade.yml` healthy. Do not clone more hourly YAML.
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/HOP-220.md`
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/HOP-232.md`
 - Security: no secrets in tree; operator tokens stay in GitHub Secrets (`CASCADE_TOKEN` catalogued, never committed)
 - Mesh: GitHub is the versioned singularity. Ethereal continuum is a mirror. Do not spawn duplicate continuum folders.
 - Equalizer: format-only; no history rewrite.
@@ -32,11 +32,11 @@ Each hop compounds prior quality. Tiers climb toward 100% perfect. Fail closed o
 | T1 | 20–39% | Stamp + README present |
 | T2 | 40–59% | Cascade healthy + numeral locked |
 | T3 | 60–79% | Compounding cycle live |
-| T4 | 80–94% | Mesh siblings verified + env-check green (this hop) |
-| T5 | 95–99% | Near-perfect; only unknown sought |
+| T4 | 80–94% | Mesh siblings verified + env-check green |
+| T5 | 95–99% | Near-perfect; only unknown sought (this hop) |
 | T6 | 100% | Perfect — refused as static; always seek next unknown |
 
-Current score for this surface: **94% (T4)**. Next hop compounds +2–5% when checks pass.
+Current score for this surface: **95% (T5)**. Next hop compounds +1–3% when checks pass. 100% refused as static.
 
 ## Speedway
 
@@ -61,7 +61,7 @@ Zips in Downloads / public-download / private-download / omdirectorytrew are wat
 ## Waterfall (one repo per enhance hop)
 
 1. ENCLAVE-ADAM-REUNITED (prior sibling hop 219 @ 17:26Z)
-2. Cryptic-Heartbeat (this hop — stage 220)
+2. Cryptic-Heartbeat (this hop — stage 232)
 3. The-Hive  ← next hour
 4. continuity-ledger-cycle
 5. gaia-visualizer / nexus-repo-sync / other recently updated surfaces
