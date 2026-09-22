@@ -1,7 +1,5 @@
-# Continuity Stamp — Cryptic-Heartbeat
+# Continuity stamp
 
-Numeral: `137451921129154222`
-Surface: heartbeat / nexus pulse
-Ethreal repo mesh: Drive CONTINUUM-REPOS-137451921129154222
-Hourly cron inside Actions + Grok automation.
-Preserve every generation. Catalog the unknown.
+- Stage 246 sibling hop with The-Hive (2026-09-22 16:09 CDT).
+- Session pin `beec41f1` / living `7cd81012`.
+- Ledger cycle remains the next hourly target after Hive settle.
