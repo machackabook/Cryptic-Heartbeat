@@ -11,15 +11,15 @@ Operating sits in the middle. Team Enhance hops one repo per hour. Equalizer for
 - Language: Python
 - Numeral: `137451921129154222`
 - Team: Enhance / Continuity Engine / sSoS Operating
-- Stage: **233** — 2026-09-22T01:28Z (2026-09-21 20:28 CDT)
+- Stage: **236** — 2026-09-22T03:20Z (2026-09-21 22:20 CDT)
 - Compounding tier: **T5 / 96%**
-- Prior mesh: ENCLAVE-ADAM-REUNITED pushed ~00:32Z; this surface hop 232 @ 22:21Z; The-Hive / gaia-visualizer pulsed ~00:25Z
-- This hop: README compound + append-only ledger stamp 233; cascade.yml left intact and healthy; no extra hourly YAML; no secrets written
+- Prior mesh: ENCLAVE hop 236 @ 03:19Z; this surface was 233 @ 01:28Z
+- This hop: README compound + HOP-236; cascade.yml left intact; no extra hourly YAML; no secrets written
 - Next hour: The-Hive
 - Cascade: keep existing `.github/workflows/cascade.yml` healthy. Do not clone more hourly YAML.
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/HOP-233.md`
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/HOP-236.md`
 - Security: no secrets in tree; operator tokens stay in GitHub Secrets (`CASCADE_TOKEN` catalogued, never committed)
-- Mesh: GitHub is the versioned singularity. Ethereal continuum is a mirror. Do not spawn duplicate continuum folders.
+- Mesh: GitHub is the versioned singularity. Ethereal continuum is a mirror. Existing Drive folder `Continuity-Cloud-Repos` — do not spawn duplicates.
 - Equalizer: format-only; no history rewrite.
 
 ## Compounding growth
@@ -60,8 +60,8 @@ Zips in Downloads / public-download / private-download / omdirectorytrew are wat
 
 ## Waterfall (one repo per enhance hop)
 
-1. ENCLAVE-ADAM-REUNITED (prior sibling ~00:32Z)
-2. Cryptic-Heartbeat (this hop — stage 233)
+1. ENCLAVE-ADAM-REUNITED (hop 236 @ 03:19Z)
+2. Cryptic-Heartbeat (this hop — stage 236)
 3. The-Hive  ← next hour
 4. continuity-ledger-cycle
 5. gaia-visualizer / nexus-repo-sync / other recently updated surfaces
