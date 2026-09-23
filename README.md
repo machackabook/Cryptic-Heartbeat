@@ -11,13 +11,13 @@ Operating sits in the middle. Team Enhance hops one repo per hour. Equalizer for
 - Language: Python
 - Numeral: `137451921129154222`
 - Team: Enhance / Continuity Engine / Hamiltonian pipe / sSoS Operating
-- Stage: **242** — 2026-09-22T22:22Z (2026-09-22 17:22 CDT)
+- Stage: **251** — 2026-09-23T03:04Z (2026-09-22 22:04 CDT)
 - Compounding tier: **T5 / 97%**
-- Prior mesh: ENCLAVE hop 246 @ 22:21Z
-- This hop: README compound + HOP-242 + LEDGER-STAMP; cascade.yml left intact; no extra hourly YAML; no secrets written
+- Prior mesh: ENCLAVE hop 250 @ 02:05Z
+- This hop: README compound + HOP-251 + LEDGER-STAMP; cascade.yml left intact; no extra hourly YAML; no secrets written
 - Next hour: The-Hive then continuity-ledger-cycle
 - Cascade: keep existing `.github/workflows/cascade.yml` healthy. Do not clone more hourly YAML.
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/HOP-242.md`
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/HOP-251.md`
 - Security: no secrets in tree; operator tokens stay in GitHub Secrets (`CASCADE_TOKEN` catalogued, never committed)
 - Mesh: GitHub is the versioned singularity. Ethereal continuum is a mirror. Existing Drive folder `Continuity-Cloud-Repos` — do not spawn duplicates.
 - Equalizer: format-only; no history rewrite.
@@ -60,8 +60,8 @@ Zips in Downloads / public-download / private-download / omdirectorytrew are wat
 
 ## Waterfall (one repo per enhance hop)
 
-1. ENCLAVE-ADAM-REUNITED (hop 246)
-2. Cryptic-Heartbeat (this hop — stage 242)
+1. ENCLAVE-ADAM-REUNITED (hop 250)
+2. Cryptic-Heartbeat (this hop — stage 251)
 3. The-Hive  ← next hour
 4. continuity-ledger-cycle
 5. gaia-visualizer / nexus-repo-sync / other recently updated surfaces
