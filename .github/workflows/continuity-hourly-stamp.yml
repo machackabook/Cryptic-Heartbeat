@@ -1,0 +1,23 @@
+name: Continuity Hourly Stamp
+on:
+  schedule:
+    - cron: "29 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Append ledger stamp
+        run: |
+          mkdir -p ledger
+          echo "{\"t\":\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\",\"repo\":\"${{ github.repository }}\",\"event\":\"hourly\",\"sha\":\"${{ github.sha }}\",\"numeral\":\"137451921129154222\"}" >> ledger/hourly-stamp.ndjson
+      - name: Commit if dirty
+        run: |
+          git config user.name "continuity-engine"
+          git config user.email "continuity@users.noreply.github.com"
+          git add ledger/hourly-stamp.ndjson || true
+          git diff --cached --quiet && echo "clean" || git commit -m "ledger: hourly stamp 137451921129154222"
+          git push || true
