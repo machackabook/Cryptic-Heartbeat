@@ -11,13 +11,13 @@ Operating sits in the middle. Team Enhance hops one repo per hour. Equalizer for
 - Language: Python
 - Numeral: `137451921129154222`
 - Team: Enhance / Continuity Engine / Hamiltonian pipe / sSoS Operating
-- Stage: **270** — 2026-09-24T14:10Z (2026-09-24 09:10 CDT)
-- Compounding tier: **T5 / 98%**
-- Prior mesh: hop 269 @ 07:20Z; ENCLAVE hop 257 @ 08:04Z
-- This hop: README quality compound; append-only HOP-270 + LEDGER-STAMP; cascade.yml left intact; no extra hourly YAML; no secrets written
+- Stage: **271** — 2026-09-24T18:05Z (2026-09-24 13:05 CDT)
+- Compounding tier: **T5 / 99%**
+- Prior mesh: hop 270 @ 14:10Z; geometry pin 73e52b2f; ENCLAVE hop 258 @ 16:04Z
+- This hop: README quality compound; append-only HOP-271 + LEDGER-STAMP; cascade.yml left intact; no extra hourly YAML; no secrets written
 - Next hour: The-Hive then continuity-ledger-cycle
 - Cascade: keep existing `.github/workflows/cascade.yml` healthy. Do not clone more hourly YAML.
-- Ledger: `docs/LEDGER-STAMP.md` + `docs/HOP-270.md`
+- Ledger: `docs/LEDGER-STAMP.md` + `docs/HOP-271.md`
 - Security: no secrets in tree; operator tokens stay in GitHub Secrets (`CASCADE_TOKEN` catalogued, never committed)
 - Mesh: GitHub is the versioned singularity. Ethereal continuum is a mirror. Existing Drive folder `Continuity-Cloud-Repos` — do not spawn duplicates.
 - Equalizer: format-only; no history rewrite.
@@ -36,7 +36,7 @@ Each hop compounds prior quality. Tiers climb toward 100% perfect. Fail closed o
 | T5 | 95–99% | Near-perfect; only unknown sought (this hop) |
 | T6 | 100% | Perfect — refused as static; always seek next unknown |
 
-Current score for this surface: **98% (T5)**. Next hop compounds +1 when checks pass. 100% refused as static.
+Current score for this surface: **99% (T5)**. Next hop compounds +1 when checks pass. 100% refused as static.
 
 ## Speedway
 
@@ -60,8 +60,8 @@ Zips in Downloads / public-download / private-download / omdirectorytrew are wat
 
 ## Waterfall (one repo per enhance hop)
 
-1. ENCLAVE-ADAM-REUNITED (257 prior)
-2. Cryptic-Heartbeat — **270 this hop**
+1. ENCLAVE-ADAM-REUNITED (258 prior)
+2. Cryptic-Heartbeat — **271 this hop**
 3. The-Hive — next hour
 4. continuity-ledger-cycle
 5. gaia-visualizer / nexus-repo-sync / other recently updated surfaces
