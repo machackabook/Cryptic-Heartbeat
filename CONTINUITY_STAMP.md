@@ -1,6 +1,6 @@
-# CONTINUITY STAMP
+# Continuity stamp
 
-Stage 267 — 2026-09-23 23:14 CDT.
-Session hash `beec41f1`. Living hash `7cd81012`.
+Stage 271 — 2026-09-24 13:08 CDT.
+Session kernel `beec41f1`. Living `7cd81012`.
 Geometries: infinity | hamiltonian | triangular | torus.
-Runtime extras only: klein | hopf | figure8 | trefoil.
+Waterfall: The-Hive → gaia-visualizer → Cryptic-Heartbeat.
