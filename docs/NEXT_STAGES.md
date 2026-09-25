@@ -1,25 +1,16 @@
-# Next stages — Stage 218 (2026-09-20 16:03 CDT)
+# Next stages — Stage 288 (2026-09-25 15:03 CDT)
 
 Session paste hash `beec41f1` reconfirmed (same four-geometry `update(t)`). Living hash `7cd81012`.
 
-## Do not change
-
-- Four-geometry session switch: infinity | hamiltonian | triangular | torus.
-- Per-frame lerp `0.05` and reused target vector in living source.
-- Theta step `(0.01 + idx * 0.002) * gravityPull`.
-- Minor radius `3 + toroidalWeave * 2`.
-
-## Done prior
+- 4-gov HeartbeatScan on HTTP mutation + WS.
+- 13 authenticated live ledger_pulse → Hive WS against live sheet counts.
+- 14 memory engrams into Drive `CRYPTIC-HEARTBEAT-NEXUS-ROOT`.
+- 16-public hamiltoniansingularity.ai (`blend` default already host-gated).
+- 19-panels remaining NexusStudio / Stream sliders.
+- 51-impl tighter InstancedMesh instanceOffset at 4k–16k.
+- 58 / 66-session: promote klein/hopf/figure8/trefoil only after a paste includes those cases.
+- 270-gate: keep `beec41f1` pinned.
+- 289 next waterfall hop.
 
 - gaia-visualizer `GPU_AUTO_THRESHOLD = 1024`: InstancedMesh GPU buffers + transform feedback auto-enable when `?nodes=` exceeds 1k.
-- Session pin held through stages 161–218.
-
-## Next work
-
-1. Panel emitters: remaining Quine / NexusStudio editors → `emitGeometry` / `emitWeaveChange` / `emitPulse` / `emitLedger`.
-2. Tighter instanceOffset shader path at 4k–16k without CPU `setMatrixAt` writes.
-3. Drive engram persist from `/api/gaia/engram` into `CRYPTIC-HEARTBEAT-NEXUS-ROOT`.
-4. Remaining ledger-sheet sources behind the live HMAC pulse gate.
-5. Promote klein / hopf / figure8 / trefoil into the session switch only after a paste includes those cases.
-6. HeartbeatScan authorization on Hive HTTP mutation + WS.
-7. Public band default `blend` on hamiltoniansingularity.ai (already wired; keep gated until host cutover).
+- Session pin held through stages 161–288.
