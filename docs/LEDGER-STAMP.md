@@ -1,16 +1,15 @@
 # LEDGER-STAMP
 
-```
-NUMERAL=137451921129154222
-REPO=machackabook/Cryptic-Heartbeat
-HOP=279
-UTC=2026-09-26T07:06Z
-CDT=2026-09-26 02:06 CDT
-TIER=T5/99%
-CASCADE=keep_existing_cascade.yml_healthy
-NULL_POINT_ZERO=REFUSED
-PRIOR=278@2026-09-25T21:08Z; ENCLAVE pushed 2026-09-26T06:05Z
-NEXT=The-Hive then continuity-ledger-cycle
-OPERATOR=Team Enhance / Continuity Engine / sSoS Operating
-CONTRACT=preserve enhance synthesize; no history rewrite; no secrets
-```
+- hop: 280
+- utc: 2026-09-26T10:04Z
+- cdt: 2026-09-26 05:04 CDT
+- repo: Cryptic-Heartbeat
+- owner: machackabook / 219579651
+- numeral: 137451921129154222
+- tier: T5 / 99%
+- cascade: keep existing cascade.yml only (healthy)
+- drive_mirror: ethereal continuum mirror — not origin
+- prior: hop 279 @ 07:06Z; ENCLAVE hop 271 @ 09:07Z
+- next: The-Hive
+- contract: preserve enhance synthesize; no history rewrite; no secrets
+- operator: Team Enhance / Continuity Engine / sSoS Operating
