@@ -17,9 +17,9 @@
 - Positions lerp at `lerp` (default `0.05`) per frame; never snap. Target vector is reused in the living source.
 - `blend` mixes hamiltonian ↔ klein when `geometry === "blend"`.
 - Chat kernel `update(t)` remains the reference for torus / infinity / hamiltonian / triangular.
-- Stage-295: live chat (2026-09-26 14:07 CDT) reconfirmed session hash `beec41f1`. Living hash `7cd81012`. Hamiltonian lineage seeded in `machackabook/hamiltonian-incursion`. Klein / hopf / figure8 / trefoil not in session switch. CPU evaluate covers those extras (GPU ids 12 / 13 / 8 / 7). Visualizer auto GPU/TF at `nodes > 1024`. instanceOffset band `4096–16384` (`NODE_CAP`).
+- Stage-296: live chat (2026-09-26 15:03 CDT) reconfirmed session hash `beec41f1`. Living hash `7cd81012`. Hamiltonian lineage seeded in `machackabook/hamiltonian-incursion`. Klein / hopf / figure8 / trefoil not in session switch. CPU evaluate covers those extras (GPU ids 12 / 13 / 8 / 7). Visualizer auto GPU/TF at `nodes > 1024`. instanceOffset band `4096–16384` (`NODE_CAP`).
 
-**Next** — hop 295 nexus-repo-sync (this stamp); ledger pulse (13); Drive engrams (14); public band (16); remaining panels (19); call `shouldSkipCpuInstanceMatrix` from the visualizer instance loop when TF is off (51-impl); HeartbeatScan (4-gov). Promote extras only after they appear in a chat paste.
+**Next** — hop 296 continuity-mesh-speedway → nexus-repo-sync; ledger pulse (13); Drive engrams (14); public band (16); remaining panels (19); call `shouldSkipCpuInstanceMatrix` from the visualizer instance loop when TF is off (51-impl); HeartbeatScan (4-gov). Promote extras only after they appear in a chat paste.
 
 Events on the visualizer window:
 
